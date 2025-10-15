@@ -2,8 +2,8 @@ import { FooterLinks } from "./FooterLinks.constants";
 
 export const Footer = () => {
     return (
-        <footer className="border-t border-gray-300">
-            <div className="flex flex-col items-center text-center">
+        <footer className="border-t border-gray-300 bg-blue-100">
+            <div className="flex flex-col items-center text-center bg-blue">
                 <span>
                     Have questions? Our team is here to help. Call 631-400-8888
                 </span>

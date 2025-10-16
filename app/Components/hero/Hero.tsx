@@ -8,19 +8,19 @@ const HeroCardItems = [
     title: "Legal answering service",
     description:
       "With 24/7 legal intake, you’ll never miss a potential client’s call.",
-    img: "/public/icons/Answering.svg",
+    img: "/icons/Answering.svg",
   },
   {
     title: "AI intake chatbot",
     description:
       "Turn web leads into clients with a chatbot powered by the latest in AI technology.",
-    img: "/public/icons/AL_2ColorIcon-Chatbot.svg",
+    img: "/icons/AL_2ColorIcon-Chatbot.svg",
   },
   {
     title: "Live translation services",
     description:
       "Break through the language barrier and schedule video conferences with live interpreters.",
-    img: "/public/icons/publicTranslation.svg",
+    img: "/icons/Translation.svg",
   },
 ];
 export default function Hero() {

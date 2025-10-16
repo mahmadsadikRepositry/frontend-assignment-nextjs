@@ -4,8 +4,7 @@ import Image from "next/image";
 
 export default function Crm() {
   return (
-    <section className="bg-white w-full py-12 px-4 md:px-8 flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16">
-      {/* Left: CRM Graphic */}
+    <section className="bg-white w-full py-20 px-4 md:px-8 flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 min-h-[600px]">
       <div className="w-full md:w-1/2 flex justify-center">
         <Image
           src="/images/CRM-Graphic.png"

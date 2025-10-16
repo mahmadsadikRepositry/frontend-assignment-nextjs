@@ -11,7 +11,7 @@ export const HeroCard = ({ title, description, img }: { title: string; descripti
             )}
             <div className="p-4 text-center">
                 <h2 className="text-2xl font-semibold mb-2">{title}</h2>
-                <hr className="my-2 border-blue-200" />
+                <div className="w-full h-[2px] bg-[#3CCED7] max-w-[478px] mb-4" aria-hidden="true" />
                 <p className="text-gray-600">{description}</p>
             </div>
         </Card>

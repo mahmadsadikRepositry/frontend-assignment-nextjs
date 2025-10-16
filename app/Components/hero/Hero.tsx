@@ -14,7 +14,7 @@ const HeroCardItems = [
     title: "AI intake chatbot",
     description:
       "Turn web leads into clients with a chatbot powered by the latest in AI technology.",
-    img: "/icons/Answering.svg",
+    img: "/icons/AL_2ColorIcon-Chatbot.svg",
   },
   {
     title: "Live translation services",
@@ -63,7 +63,7 @@ export default function Hero() {
   {/* Centered heading + separator above the hero cards (positioned over the hero background) */}
     <div id="maindiv" className="absolute left-1/2 transform -translate-x-1/2 z-20 flex flex-col items-center gap-3 px-4 w-full max-w-[1120px] bottom-8 md:bottom-20 lg:bottom-32 xl:bottom-40">
       <h2 className="text-white text-2xl md:text-3xl font-semibold text-center">Here’s what we can do for your law firm</h2>
-      <div className="w-full h-[2px] bg-[#3CCED7] max-w-[478px] mb-4" aria-hidden="true" />
+      <div className="w-full h-[2px] bg-[#3CCED7] max-w-[478px] mb-4"/>
     </div>
 
   <div className="flex absolute -bottom-60 left-1/2 transform -translate-x-1/2 gap-6 hidden md:flex">

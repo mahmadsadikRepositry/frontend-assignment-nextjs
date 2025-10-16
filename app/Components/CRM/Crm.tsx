@@ -1,7 +1,8 @@
 import * as React from "react";
 import { Button } from "@radix-ui/themes";
 import Image from "next/image";
-
+import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Crm() {
   return (
     <section>
@@ -26,21 +27,29 @@ export default function Crm() {
         </p>
         <ul className="space-y-4 mb-8">
           <li className="flex items-start gap-3">
-            <span className="text-blue text-xl">&#10003;</span>
+            <span className="text-blue text-xl">
+              <FontAwesomeIcon icon={faCircleCheck} className="text-blue-500" />
+            </span>
             <span className="text-gray-800">
               Answering Legal’s receptionists take down exactly the information
               you need.
             </span>
           </li>
           <li className="flex items-start gap-3">
-            <span className="text-blue text-xl">&#10003;</span>
+            <span className="text-blue text-xl">
+                            <FontAwesomeIcon icon={faCircleCheck} className="text-blue-500" />
+
+            </span>
             <span className="text-gray-800">
               Through native API integrations with our proprietary software, we
               make sure it’s immediately where you need it to be.
-            </span>
+            </span>``
           </li>
           <li className="flex items-start gap-3">
-            <span className="text-blue text-xl">&#10003;</span>
+            <span className="text-blue text-xl">
+                            <FontAwesomeIcon icon={faCircleCheck} className="text-blue-500" />
+
+            </span>
             <span className="text-gray-800">
               All you’ll have to do is open your CRM and follow up to secure
               your new client’s business.

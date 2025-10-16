@@ -62,7 +62,7 @@ export default function Crm() {
         >
           <a
             href="/answering-service-pricing-plans"
-            className="inline-block bg-blue text-white font-semibold rounded-lg px-6 py-3 text-lg "
+            className="inline-block bg-blue text-white font-semibold rounded-lg text-lg "
           >
             See our pricing
           </a>

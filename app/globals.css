@@ -1,8 +1,9 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+
 :root {
   --font-montserrat: 'Montserrat';
-  
+
   /* Typography scale from Figma */
   --h1-size: 70px;
   --h2-size: 32px;
@@ -18,7 +19,7 @@
   --h3-line: 100%;
   --body2-line: 32px;
 
-  
+
   /* Font weights */
   --fw-regular: 400;
   --fw-medium: 500;
@@ -48,29 +49,35 @@ html {
   font-weight: var(--fw-bold);
   line-height: var(--h1-line);
 }
+
 .h2 {
   font-size: var(--h2-size);
   font-weight: var(--fw-bold);
   line-height: var(--h2-line);
 }
+
 .h3 {
   font-size: var(--h3-size);
   font-weight: var(--fw-bold);
   line-height: var(--h3-line);
 }
+
 .subtitle {
   font-size: var(--subtitle-size);
   font-weight: var(--fw-semibold);
 }
+
 .body1 {
   font-size: var(--body1-size);
   font-weight: var(--fw-semibold);
 }
+
 .body2 {
   font-size: var(--body2-size);
   font-weight: var(--fw-regular);
   line-height: var(--body2-line);
 }
+
 .small {
   font-size: var(--small1-size);
   font-weight: var(--fw-semibold);
@@ -78,4 +85,35 @@ html {
 
 [devtools-indicator] {
   display: none !important;
+}
+
+.custom-navbar-bg {
+  position: fixed;
+  background-color: hsla(0, 11%, 96%, 0.85);
+  top: 0;
+  z-index: 50;
+}
+
+.custom-support-number {
+  --tw-text-opacity: 1;
+  color: rgb(3 96 230 / var(--tw-text-opacity));
+}
+
+.hover\:text-blue:hover {
+  --tw-text-opacity: 1;
+  color: rgb(3 96 230 / var(--tw-text-opacity))
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bg-blue {
+  --tw-bg-opacity: 1;
+  background-color: rgb(3 96 230 / var(--tw-bg-opacity));
 }

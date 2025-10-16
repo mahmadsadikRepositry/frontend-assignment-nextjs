@@ -1,7 +1,9 @@
 import * as React from 'react';
 import { Button } from '@radix-ui/themes';
 import { Card } from '../Card/Card';
-import { HeroCard } from '../Card/HeroCard';
+import { HeroCard } from './HeroCard';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 const HeroCardItems = [
 	{
@@ -13,15 +15,13 @@ const HeroCardItems = [
 		title: 'AI intake chatbot',
 		description: 'Turn web leads into clients with a chatbot powered by the latest in AI technology.',
 		img: '/icons/Answering.svg'
-	}
-	,
+	},
 	{
 		title: 'Live translation services',
 		description: 'Break through the language barrier and schedule video conferences with live interpreters.',
 		img: '/icons/Translation.svg'
 	}
 ];
-
 export default function Hero() {
 	return (
 		<section
@@ -43,27 +43,25 @@ export default function Hero() {
 					<div className="flex items-center gap-2 mt-2">
 						{/* Stars */}
 						{[...Array(5)].map((_, i) => (
-							<svg key={i} className="w-7 h-7 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-								<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.966a1 1 0 00.95.69h4.175c.969 0 1.371 1.24.588 1.81l-3.38 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.921-.755 1.688-1.54 1.118l-3.38-2.455a1 1 0 00-1.175 0l-3.38 2.455c-.784.57-1.838-.197-1.539-1.118l1.287-3.966a1 1 0 00-.364-1.118L2.174 9.393c-.783-.57-.38-1.81.588-1.81h4.175a1 1 0 00.95-.69l1.286-3.966z" />
-							</svg>
+							<FontAwesomeIcon key={i} icon={faStar} className="text-yellow-400" />
 						))}
 						<span className="text-white  text-base ml-2">based on 230 reviews</span>
 					</div>
 				</div>
 
 			
-				   <Button asChild variant="classic" className="bg-blue-500 text-white font-semibold rounded-lg px-6 py-3 text-lg shadow transition-shadow duration-300 hover:shadow-2xl">
+				   <button  className="bg-blue-500 text-white font-semibold rounded-lg  text-lg shadow  px-1 py-1">
 					   <a
 						   href="/answering-service-pricing-plans"
-						   className="inline-block bg-blue text-white font-semibold rounded-lg px-6 py-3 text-lg shadow transition-shadow duration-300 hover:shadow-2xl"
+						   className="inline-block bg-blue text-white font-semibold "
 					   >
 						   See our pricing
 					   </a>
-				   </Button>
+				   </button>
 			</div>
 		
 
-<div className="flex absolute -bottom-50 left-1/2 transform -translate-x-1/2 gap-6 hidden md:flex">
+<div className="flex absolute -bottom-60 left-1/2 transform -translate-x-1/2 gap-6 hidden md:flex">
 	{
 		HeroCardItems.map((item, index) => (
 			<div key={index} className="right-10 w-80">

@@ -1,3 +1,5 @@
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function NavBar() {
   return (
     <header className="custom-navbar-bg w-full">
@@ -26,22 +28,15 @@ export default function NavBar() {
           <nav className="w-1/3 flex justify-center items-center gap-10">
             <div className="flex items-center gap-8">
               <div className="flex items-center gap-1">
-                <a href="#" className="text-navyBlue font-semibold text-lg hover:text-blue transition-colors">
-                  Products
-                </a>
-                <img src="/images/nav_icon.png" alt="Dropdown" className="h-2 transition-transform duration-300 rotate-0 relative top-1 hover:text-blue" />
-              </div>
-              <div className="flex items-center gap-1">
-                <a href="#" className="text-navyBlue font-semibold text-lg hover:text-blue transition-colors">
-                  About
-                </a>
-                <img src="/images/nav_icon.png" alt="Dropdown" className="h-2 transition-transform duration-300 rotate-0" />
+                <a href="#" className="text-navyBlue font-semibold text-lg hover:text-blue">Products</a>
+                <span className="text-navyBlue relative top-1"><FontAwesomeIcon icon={faChevronDown} /></span>  </div>
+              <div className="flex items-center gap-1 hover:text-blue">
+                <a href="#" className="text-navyBlue font-semibold text-lg">About</a>
+                <span className="text-navyBlue"><FontAwesomeIcon icon={faChevronDown} /></span>
               </div>
               <div className="flex items-center gap-1 hover:text-blue">
-                <a href="#" className="text-navyBlue font-semibold text-lg hover:text-blue transition-colors hover:text-blue">
-                  Resources
-                </a>
-                <img src="/images/nav_icon.png" alt="Dropdown" className="h-2 transition-transform duration-300 rotate-0 hover:text-blue" />
+                <a href="#" className="text-navyBlue font-semibold text-lg">Resources</a>
+                <span className="text-navyBlue"><FontAwesomeIcon icon={faChevronDown} /></span>
               </div>
               <a href="#" className="text-navyBlue font-semibold text-lg hover:text-blue transition-colors">
                 Pricing

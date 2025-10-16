@@ -33,7 +33,7 @@ export const ArticleCard = ({
         </div>
         <div className="px-2">
           <span className=" uppercase text-blue-500">{category}</span>
-          <div className="border-l-4 border-blue-500 pl-2">
+          <div className="border-l-4 border-[#3CCED7] pl-2">
             <div className="mt-4 flex justify-between text-sm text-gray-500">
               <span>{date}</span>
             </div>

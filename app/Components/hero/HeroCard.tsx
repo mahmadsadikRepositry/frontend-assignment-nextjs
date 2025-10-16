@@ -1,4 +1,4 @@
-import { Card } from "./Card";
+import { Card } from "../Card/Card";
 
 export const HeroCard = ({ title, description, img }: { title: string; description: string; img: string }) => {
     return (

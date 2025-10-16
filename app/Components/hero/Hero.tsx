@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Button } from '@radix-ui/themes';
 import { Card } from '../Card/Card';
-import { HeroCard } from '../Card/HeroCard';
+import { HeroCard } from './HeroCard';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 

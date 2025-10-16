@@ -18,9 +18,10 @@ export default function Crm() {
         />
       </div>
       <div className="w-full md:w-1/2 flex flex-col justify-center items-start max-w-lg">
-        <h2 className="text-[#23255A] text-2xl md:text-3xl font-bold mb-2">
+        <h2 className="text-2xl md:text-3xl font-bold mb-2">
           Your data’s in good hands
         </h2>
+        <hr className="w-full border-t-2 border-blue-500 my-1" />
         <div className="w-20 h-1 bg-blue mb-4" />
         <p className="text-gray-700 text-base md:text-lg mb-6">
           Our partnership with your CRM enables a seamless flow of information.

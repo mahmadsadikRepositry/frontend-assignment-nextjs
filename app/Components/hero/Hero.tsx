@@ -30,7 +30,7 @@ export default function Hero() {
 						<span className="text-white  text-base ml-2">based on 230 reviews</span>
 					</div>
 				</div>
-				   <Button asChild>
+				   <Button asChild variant="classic">
 					   <a
 						   href="/answering-service-pricing-plans"
 						   className="inline-block bg-blue text-white font-semibold rounded-lg px-6 py-3 text-lg shadow transition-shadow duration-300 hover:shadow-2xl"
@@ -41,9 +41,9 @@ export default function Hero() {
 			</div>
 			{/* Right side image (optional, if you want to overlay an image) */}
 			
-			<div className="hidden md:block absolute right-0 bottom-0 h-full w-1/2">
+			{/* <div className="hidden md:block absolute right-0 bottom-0 h-full w-1/2">
 				<img src="/images/hero-agent.png" alt="Agent" className="object-cover h-full w-full" />
-			</div>
+			</div> */}
 			
 		</section>
 	);

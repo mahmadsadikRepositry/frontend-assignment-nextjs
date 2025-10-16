@@ -16,8 +16,8 @@ module.exports = {
         blue: '#0B84FF',
         navyBlue: '#072146',
         darkBlue: '#06357A',
-        red: '#ae949aff'
-
+        red: '#ae949aff',
+        SKYBLUE:'#0360E6'
         //todo add colors from figma here
       }
     }

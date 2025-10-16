@@ -57,17 +57,7 @@ export default function Crm() {
             </span>
           </li>
         </ul>
-        <button
-        
-          className="bg-blue-500 text-white font-semibold rounded-lg px-6 py-3 text-lg "
-        >
-          <a
-            href="/answering-service-pricing-plans"
-            className="inline-block bg-blue text-white font-semibold rounded-lg text-lg "
-          >
-            See our pricing
-          </a>
-        </button>
+        <a className="px-4 gap-[10px] rounded-[12px] text-center flex justify-center items-center font-semibold text-base sm:text-[22px] overflow-hidden h-[43px] shrink-0 py-[20px] w-fit h-auto max-h-[43px] bg-blue text-white hover:bg-navyBlue" href="/try-for-free">See our pricing</a>
       </div>
     </div>
     </section>

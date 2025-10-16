@@ -50,14 +50,16 @@ export default function Hero() {
 				</div>
 
 			
-				   <button  className="bg-blue-500 text-white font-semibold rounded-lg  text-lg shadow  px-1 py-1">
+				   {/* <button  className="bg-blue-500 text-white font-semibold rounded-lg  text-lg shadow  px-1 py-1">
 					   <a
 						   href="/answering-service-pricing-plans"
 						   className="inline-block bg-blue text-white font-semibold "
 					   >
 						   See our pricing
 					   </a>
-				   </button>
+				   </button> */}
+
+                   <a className="px-4 gap-[10px] rounded-[12px] text-center flex justify-center items-center font-semibold text-base sm:text-[22px] overflow-hidden h-[43px] shrink-0 py-[20px] w-fit h-auto max-h-[43px] bg-blue text-white hover:bg-navyBlue" href="/try-for-free">See our pricing</a>
 			</div>
 		
 

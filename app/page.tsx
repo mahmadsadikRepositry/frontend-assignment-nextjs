@@ -1,6 +1,7 @@
 import Hero from "./Components/hero/Hero";
-import Crm from "./Components/CRM/Crm";
+import Crm from "./Components/Crm/Crm";
 import { ArticleSection } from "./Components/ArticleSection/ArticleSection";
+import ServiceForm from "./Components/ServiceForm/ServiceForm";
 
 export default function Home() {
   return (
@@ -8,7 +9,7 @@ export default function Home() {
       <Hero />
       <Crm />
       <ArticleSection />
-      
+      <ServiceForm />
     </>
   );
 }

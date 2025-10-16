@@ -61,7 +61,7 @@ export default function Hero() {
       </div>
 
   {/* Centered heading + separator above the hero cards (positioned over the hero background) */}
-    <div id="maindiv" className="absolute left-1/2 transform -translate-x-1/2 z-20 flex flex-col items-center gap-3 px-4 w-full max-w-[1120px] bottom-8 md:bottom-20 lg:bottom-32 xl:bottom-40">
+    <div id="maindiv" className="absolute left-1/2 transform -translate-x-1/2 z-20 flex flex-col items-center gap-3 px-4 w-full max-w-[1120px] bottom-8 lg:bottom-32 xl:bottom-40">
       <h2 className="text-white text-2xl md:text-3xl font-semibold text-center">Here’s what we can do for your law firm</h2>
       <div className="w-full h-[2px] bg-[#3CCED7] max-w-[478px] mb-4"/>
     </div>

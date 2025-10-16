@@ -1,77 +1,84 @@
-import * as React from 'react';
-import { Button } from '@radix-ui/themes';
-import { Card } from '../Card/Card';
-import { HeroCard } from './HeroCard';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
+import * as React from "react";
+import { Button } from "@radix-ui/themes";
+import { Card } from "../Card/Card";
+import { HeroCard } from "./HeroCard";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 const HeroCardItems = [
-	{
-		title: 'Legal answering service',
-		description: "With 24/7 legal intake, you’ll never miss a potential client’s call.",
-		img: '/icons/Answering.svg'
-	},
-	{
-		title: 'AI intake chatbot',
-		description: 'Turn web leads into clients with a chatbot powered by the latest in AI technology.',
-		img: '/icons/Answering.svg'
-	},
-	{
-		title: 'Live translation services',
-		description: 'Break through the language barrier and schedule video conferences with live interpreters.',
-		img: '/icons/Translation.svg'
-	}
+  {
+    title: "Legal answering service",
+    description:
+      "With 24/7 legal intake, you’ll never miss a potential client’s call.",
+    img: "/icons/Answering.svg",
+  },
+  {
+    title: "AI intake chatbot",
+    description:
+      "Turn web leads into clients with a chatbot powered by the latest in AI technology.",
+    img: "/icons/Answering.svg",
+  },
+  {
+    title: "Live translation services",
+    description:
+      "Break through the language barrier and schedule video conferences with live interpreters.",
+    img: "/icons/Translation.svg",
+  },
 ];
 export default function Hero() {
-	return (
-		<section
-			className="relative w-full min-h-[500px] md:min-h-[600px] flex items-center bg-cover bg-center"
-			style={{
-				backgroundImage: "url('/images/LandingHero.jpg')"
-			}}
-		>
-			<div className="absolute inset-0 bg-gradient-to-r from-[#23255A]/80 to-transparent" />
-			<div className="relative z-10 flex flex-col justify-center px-6 md:px-16 py-12 md:py-24 max-w-xl">
-				<h1 className="text-white text-3xl md:text-5xl font-bold mb-6 leading-tight">
-					We’re more than an answering service
-				</h1>
-				<p className="text-white text-lg md:text-xl mb-6">
-					Answering Legal has everything you need to make sure your firm never misses another opportunity.
-				</p>
-				<div className="mb-6">
-					<span className="text-white font-bold text-xl md:text-2xl">Excellent 4.84</span>
-					<div className="flex items-center gap-2 mt-2">
-						{/* Stars */}
-						{[...Array(5)].map((_, i) => (
-							<FontAwesomeIcon key={i} icon={faStar} className="text-yellow-400" />
-						))}
-						<span className="text-white  text-base ml-2">based on 230 reviews</span>
-					</div>
-				</div>
+  return (
+    <section className="relative w-full hero-bg flex items-center bg-cover bg-center">
+      <div className="absolute inset-0 bg-gradient-to-r from-[#23255A]/80 to-transparent" />
+      <div className="relative z-10 flex flex-col justify-center px-6 md:px-16 py-12 md:py-24 max-w-xl">
+        <h1 className="text-white text-3xl md:text-5xl font-bold mb-6 leading-tight">
+          We’re more than an answering service
+        </h1>
+        <p className="text-white text-lg md:text-xl mb-6">
+          Answering Legal has everything you need to make sure your firm never
+          misses another opportunity.
+        </p>
+        <div className="mb-6">
+          <span className="text-white font-bold text-xl md:text-2xl">
+            Excellent 4.84
+          </span>
+          <div className="flex items-center gap-2 mt-2">
+            {[...Array(5)].map((_, i) => (
+              <FontAwesomeIcon
+                key={i}
+                icon={faStar}
+                className="text-yellow-400"
+              />
+            ))}
+            <span className="text-white  text-base ml-2">
+              based on 230 reviews
+            </span>
+          </div>
+        </div>
+        <a
+          className="px-4 gap-[10px] rounded-[12px] text-center flex justify-center items-center font-semibold text-base sm:text-[22px] overflow-hidden h-[43px] shrink-0 py-[20px] w-fit h-auto max-h-[43px] bg-blue text-white hover:bg-navyBlue"
+          href="/try-for-free"
+        >
+          See our pricing
+        </a>
+      </div>
 
-			
-				   {/* <button  className="bg-blue-500 text-white font-semibold rounded-lg  text-lg shadow  px-1 py-1">
-					   <a
-						   href="/answering-service-pricing-plans"
-						   className="inline-block bg-blue text-white font-semibold "
-					   >
-						   See our pricing
-					   </a>
-				   </button> */}
+  {/* Centered heading + separator above the hero cards (positioned over the hero background) */}
+    <div id="maindiv" className="absolute left-1/2 transform -translate-x-1/2 z-20 flex flex-col items-center gap-3 px-4 w-full max-w-[1120px] bottom-8 md:bottom-20 lg:bottom-32 xl:bottom-40">
+      <h2 className="text-white text-2xl md:text-3xl font-semibold text-center">Here’s what we can do for your law firm</h2>
+      <div className="w-full h-[2px] bg-[#3CCED7] max-w-[478px] mb-4" aria-hidden="true" />
+    </div>
 
-                   <a className="px-4 gap-[10px] rounded-[12px] text-center flex justify-center items-center font-semibold text-base sm:text-[22px] overflow-hidden h-[43px] shrink-0 py-[20px] w-fit h-auto max-h-[43px] bg-blue text-white hover:bg-navyBlue" href="/try-for-free">See our pricing</a>
-			</div>
-		
-
-<div className="flex absolute -bottom-60 left-1/2 transform -translate-x-1/2 gap-6 hidden md:flex">
-	{
-		HeroCardItems.map((item, index) => (
-			<div key={index} className="right-10 w-80">
-				<HeroCard title={item.title} description={item.description} img={item.img} />
-			</div>
-		))
-	}
-</div>
-		</section>
-	);
+  <div className="flex absolute -bottom-60 left-1/2 transform -translate-x-1/2 gap-6 hidden md:flex">
+        {HeroCardItems.map((item, index) => (
+          <div key={index} className="right-10 w-80">
+            <HeroCard
+              title={item.title}
+              description={item.description}
+              img={item.img}
+            />
+          </div>
+        ))}
+      </div>
+    </section>
+  );
 }

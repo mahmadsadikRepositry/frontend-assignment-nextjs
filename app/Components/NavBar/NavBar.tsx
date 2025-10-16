@@ -69,7 +69,7 @@ export default function NavBar() {
           </nav>
           <div className="flex justify-end items-center w-1/3">
             <Image
-              src="/icons/Search.svg"
+              src="/public/icons/Search.svg"
               alt="Search"
               width={48}
               height={48}

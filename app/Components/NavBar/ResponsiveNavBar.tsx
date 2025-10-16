@@ -146,7 +146,7 @@ export default function ResponsiveNavBar() {
                 aria-label="Search"
               >
                 <Image
-                  src="/icons/search.svg"
+                  src="/public/icons/search.svg"
                   alt="Search"
                   width={32}
                   height={33}

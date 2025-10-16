@@ -4,7 +4,8 @@ import Image from "next/image";
 
 export default function Crm() {
   return (
-    <section className="bg-white w-full py-20 px-4 md:px-8 flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 min-h-[600px]">
+    <section>
+    <div className="pt-32 bg-white w-full   pb-10 flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 ">
       <div className="w-full md:w-1/2 flex justify-center">
         <Image
           src="/images/CRM-Graphic.png"
@@ -15,9 +16,8 @@ export default function Crm() {
           priority
         />
       </div>
-      {/* Right: Text and Button */}
       <div className="w-full md:w-1/2 flex flex-col justify-center items-start max-w-lg">
-        <h2 className="text-[#23255A] text-2xl md:text-3xl font-bold mb-2">
+        <h2 className="text-[#23255A] text-2xl md:text-3xl font-bold mb-2 pt-32">
           Your data’s in good hands
         </h2>
         <div className="w-20 h-1 bg-blue mb-4" />
@@ -47,19 +47,19 @@ export default function Crm() {
             </span>
           </li>
         </ul>
-        <Button
-          asChild
-          variant="classic"
-          className="bg-blue-500 text-white font-semibold rounded-lg px-6 py-3 text-lg shadow transition-shadow duration-300 hover:shadow-2xl"
+        <button
+        
+          className="bg-blue-500 text-white font-semibold rounded-lg px-6 py-3 text-lg "
         >
           <a
             href="/answering-service-pricing-plans"
-            className="inline-block bg-blue text-white font-semibold rounded-lg px-6 py-3 text-lg shadow transition-shadow duration-300 hover:shadow-2xl"
+            className="inline-block bg-blue text-white font-semibold rounded-lg px-6 py-3 text-lg "
           >
             See our pricing
           </a>
-        </Button>
+        </button>
       </div>
+    </div>
     </section>
   );
 }

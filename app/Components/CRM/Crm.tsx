@@ -6,59 +6,76 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Crm() {
   return (
     <section>
-    <div className="pt-72 bg-white w-full   pb-10 flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 ">
-      <div className="w-full md:w-1/2 flex justify-center">
-        <Image
-          src="/images/CRM-Graphic.png"
-          alt="CRM Graphic"
-          width={500}
-          height={350}
-          className="max-w-full h-auto drop-shadow-xl"
-          priority
-        />
+      <div className="pt-72 bg-white w-full   pb-10 flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 ">
+        <div className="w-full md:w-1/2 flex justify-center">
+          <Image
+            src="/images/CRM-Graphic.png"
+            alt="CRM Graphic"
+            width={500}
+            height={350}
+            className="max-w-full h-auto drop-shadow-xl"
+            priority
+          />
+        </div>
+        <div className="w-full md:w-1/2 flex flex-col justify-center items-start max-w-lg">
+          <h2 className="text-2xl md:text-3xl font-bold mb-2">
+            Your data’s in good hands
+          </h2>
+          <div
+            className="w-full h-[2px] bg-[#3CCED7] max-w-[478px] mb-4"
+            aria-hidden="true"
+          />
+          <p className="text-gray-700 text-base md:text-lg mb-6">
+            Our partnership with your CRM enables a seamless flow of
+            information.
+          </p>
+          <ul className="space-y-4 mb-8">
+            <li className="flex items-start gap-3">
+              <span className="text-blue text-xl">
+                <FontAwesomeIcon
+                  icon={faCircleCheck}
+                  className="text-blue-500"
+                />
+              </span>
+              <span className="text-gray-800">
+                Answering Legal’s receptionists take down exactly the
+                information you need.
+              </span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-blue text-xl">
+                <FontAwesomeIcon
+                  icon={faCircleCheck}
+                  className="text-blue-500"
+                />
+              </span>
+              <span className="text-gray-800">
+                Through native API integrations with our proprietary software,
+                we make sure it’s immediately where you need it to be.
+              </span>
+              ``
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-blue text-xl">
+                <FontAwesomeIcon
+                  icon={faCircleCheck}
+                  className="text-blue-500"
+                />
+              </span>
+              <span className="text-gray-800">
+                All you’ll have to do is open your CRM and follow up to secure
+                your new client’s business.
+              </span>
+            </li>
+          </ul>
+          <a
+            className="px-4 gap-[10px] rounded-[12px] text-center flex justify-center items-center font-semibold text-base sm:text-[22px] overflow-hidden h-[43px] shrink-0 py-[20px] w-fit h-auto max-h-[43px] bg-blue text-white hover:bg-navyBlue"
+            href="/try-for-free"
+          >
+            See our pricing
+          </a>
+        </div>
       </div>
-      <div className="w-full md:w-1/2 flex flex-col justify-center items-start max-w-lg">
-        <h2 className="text-2xl md:text-3xl font-bold mb-2">
-          Your data’s in good hands
-        </h2>
-        <div className="w-full h-[2px] bg-[#3CCED7] max-w-[478px] mb-4" aria-hidden="true" />
-        <p className="text-gray-700 text-base md:text-lg mb-6">
-          Our partnership with your CRM enables a seamless flow of information.
-        </p>
-        <ul className="space-y-4 mb-8">
-          <li className="flex items-start gap-3">
-            <span className="text-blue text-xl">
-              <FontAwesomeIcon icon={faCircleCheck} className="text-blue-500" />
-            </span>
-            <span className="text-gray-800">
-              Answering Legal’s receptionists take down exactly the information
-              you need.
-            </span>
-          </li>
-          <li className="flex items-start gap-3">
-            <span className="text-blue text-xl">
-                            <FontAwesomeIcon icon={faCircleCheck} className="text-blue-500" />
-
-            </span>
-            <span className="text-gray-800">
-              Through native API integrations with our proprietary software, we
-              make sure it’s immediately where you need it to be.
-            </span>``
-          </li>
-          <li className="flex items-start gap-3">
-            <span className="text-blue text-xl">
-                            <FontAwesomeIcon icon={faCircleCheck} className="text-blue-500" />
-
-            </span>
-            <span className="text-gray-800">
-              All you’ll have to do is open your CRM and follow up to secure
-              your new client’s business.
-            </span>
-          </li>
-        </ul>
-        <a className="px-4 gap-[10px] rounded-[12px] text-center flex justify-center items-center font-semibold text-base sm:text-[22px] overflow-hidden h-[43px] shrink-0 py-[20px] w-fit h-auto max-h-[43px] bg-blue text-white hover:bg-navyBlue" href="/try-for-free">See our pricing</a>
-      </div>
-    </div>
     </section>
   );
 }

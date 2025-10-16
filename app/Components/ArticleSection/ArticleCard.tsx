@@ -1,5 +1,5 @@
 import { Card } from "../Card/Card";
-import Image from 'next/image'
+import Image from "next/image";
 
 export const ArticleCard = ({
   title,

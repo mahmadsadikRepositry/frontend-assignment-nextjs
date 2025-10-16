@@ -1,7 +1,7 @@
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Link from 'next/link'
-import Image from 'next/image'
+import Link from "next/link";
+import Image from "next/image";
 export default function NavBar() {
   return (
     <header className="custom-navbar-bg w-full">
@@ -33,17 +33,36 @@ export default function NavBar() {
           <nav className="w-1/3 flex justify-center items-center gap-10">
             <div className="flex items-center gap-8">
               <div className="flex items-center gap-1">
-                <a href="#" className="text-navyBlue font-semibold text-lg hover:text-blue">Products</a>
-                <span className="text-navyBlue relative top-1"><FontAwesomeIcon icon={faChevronDown} /></span>  </div>
-              <div className="flex items-center gap-1 hover:text-blue">
-                <a href="#" className="text-navyBlue font-semibold text-lg">About</a>
-                <span className="text-navyBlue"><FontAwesomeIcon icon={faChevronDown} /></span>
+                <a
+                  href="#"
+                  className="text-navyBlue font-semibold text-lg hover:text-blue"
+                >
+                  Products
+                </a>
+                <span className="text-navyBlue relative top-1">
+                  <FontAwesomeIcon icon={faChevronDown} />
+                </span>{" "}
               </div>
               <div className="flex items-center gap-1 hover:text-blue">
-                <a href="#" className="text-navyBlue font-semibold text-lg">Resources</a>
-                <span className="text-navyBlue"><FontAwesomeIcon icon={faChevronDown} /></span>
+                <a href="#" className="text-navyBlue font-semibold text-lg">
+                  About
+                </a>
+                <span className="text-navyBlue">
+                  <FontAwesomeIcon icon={faChevronDown} />
+                </span>
               </div>
-              <a href="#" className="text-navyBlue font-semibold text-lg hover:text-blue transition-colors">
+              <div className="flex items-center gap-1 hover:text-blue">
+                <a href="#" className="text-navyBlue font-semibold text-lg">
+                  Resources
+                </a>
+                <span className="text-navyBlue">
+                  <FontAwesomeIcon icon={faChevronDown} />
+                </span>
+              </div>
+              <a
+                href="#"
+                className="text-navyBlue font-semibold text-lg hover:text-blue transition-colors"
+              >
                 Pricing
               </a>
             </div>
@@ -56,11 +75,15 @@ export default function NavBar() {
               height={48}
               className="h-12 w-12 mr-1 cursor-pointer"
             />
-            <a className="px-4 gap-[10px] rounded-[12px] text-center flex justify-center items-center font-semibold text-base sm:text-[22px] overflow-hidden h-[43px] shrink-0 py-[20px] w-fit h-auto max-h-[43px] bg-blue text-white hover:bg-navyBlue" href="/try-for-free">Try for free</a>
+            <a
+              className="px-4 gap-[10px] rounded-[12px] text-center flex justify-center items-center font-semibold text-base sm:text-[22px] overflow-hidden h-[43px] shrink-0 py-[20px] w-fit h-auto max-h-[43px] bg-blue text-white hover:bg-navyBlue"
+              href="/try-for-free"
+            >
+              Try for free
+            </a>
           </div>
         </div>
       </div>
     </header>
-    
   );
 }

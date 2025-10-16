@@ -1,5 +1,5 @@
 import Hero from "./Components/hero/Hero";
-import Crm from "./Components/Crm/Crm";
+import Crm from "./Components/CRM/Crm";
 import { ArticleSection } from "./Components/ArticleSection/ArticleSection";
 import ServiceForm from "./Components/ServiceForm/ServiceForm";
 

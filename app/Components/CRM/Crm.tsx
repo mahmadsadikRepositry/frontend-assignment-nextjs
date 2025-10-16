@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Button } from "@radix-ui/themes";
 import Image from "next/image";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

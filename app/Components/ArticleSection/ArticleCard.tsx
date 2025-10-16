@@ -1,4 +1,5 @@
 import { Card } from "../Card/Card";
+import Image from 'next/image'
 
 export const ArticleCard = ({
   title,
@@ -18,12 +19,16 @@ export const ArticleCard = ({
       <div className="p-1">
         <div className=" rounded-t-lg px-2">
           {img && (
-            <img
-              src={img}
-              alt={title}
-              className="rounded-lg mb-4 w-full h-48 object-cover"
-              style={{ boxSizing: "border-box" }}
-            />
+            <div className="relative w-full h-48 rounded-lg overflow-hidden mb-4">
+              <Image
+                src={img}
+                alt={title}
+                fill
+                sizes="(max-width: 768px) 100vw, 480px"
+                className="object-cover"
+                style={{ boxSizing: "border-box" }}
+              />
+            </div>
           )}
         </div>
         <div className="px-2">

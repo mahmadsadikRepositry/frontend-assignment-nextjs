@@ -1,5 +1,7 @@
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from 'next/link'
+import Image from 'next/image'
 export default function NavBar() {
   return (
     <header className="custom-navbar-bg w-full">
@@ -17,13 +19,16 @@ export default function NavBar() {
         </div>
         <div className="flex  items-center w-full">
           <div className="flex items-center justify-start w-1/3 ">
-            <a href="/" className="flex items-center gap-2">
-              <img
+            <Link href="/" className="flex items-center gap-2">
+              <Image
                 src="/images/Answering LegalTM_Blue.png"
                 alt="Answering Legal Logo"
-                className="h-16 w-auto"
+                width={293}
+                height={48}
+                className="h-16 w-auto object-contain"
+                priority
               />
-            </a>
+            </Link>
           </div>
           <nav className="w-1/3 flex justify-center items-center gap-10">
             <div className="flex items-center gap-8">
@@ -44,9 +49,11 @@ export default function NavBar() {
             </div>
           </nav>
           <div className="flex justify-end items-center w-1/3">
-            <img
+            <Image
               src="/icons/Search.svg"
               alt="Search"
+              width={48}
+              height={48}
               className="h-12 w-12 mr-1 cursor-pointer"
             />
             <a className="px-4 gap-[10px] rounded-[12px] text-center flex justify-center items-center font-semibold text-base sm:text-[22px] overflow-hidden h-[43px] shrink-0 py-[20px] w-fit h-auto max-h-[43px] bg-blue text-white hover:bg-navyBlue" href="/try-for-free">Try for free</a>

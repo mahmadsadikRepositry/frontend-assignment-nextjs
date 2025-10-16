@@ -5,4 +5,6 @@ import '@fortawesome/fontawesome-svg-core/styles.css'; // load the CSS
 // Prevent FontAwesome from dynamically adding its CSS since we import it above
 config.autoAddCss = false;
 
-export default null;
+const faFontawesomeInit = null;
+
+export default faFontawesomeInit;

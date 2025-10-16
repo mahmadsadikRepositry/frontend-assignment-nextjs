@@ -30,7 +30,9 @@ export default function Hero() {
 						<span className="text-white  text-base ml-2">based on 230 reviews</span>
 					</div>
 				</div>
-				   <Button asChild variant="classic">
+
+			
+				   <Button asChild variant="classic" className="bg-blue-500 text-white font-semibold rounded-lg px-6 py-3 text-lg shadow transition-shadow duration-300 hover:shadow-2xl">
 					   <a
 						   href="/answering-service-pricing-plans"
 						   className="inline-block bg-blue text-white font-semibold rounded-lg px-6 py-3 text-lg shadow transition-shadow duration-300 hover:shadow-2xl"

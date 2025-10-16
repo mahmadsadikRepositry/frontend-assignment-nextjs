@@ -1,3 +1,5 @@
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 export default function NavBar() {
@@ -18,14 +20,14 @@ export default function NavBar() {
             <div className="flex items-center gap-8">
               <div className="flex items-center gap-1">
                 <a href="#" className="text-navyBlue font-semibold text-lg">Products</a>
-                <span className="text-navyBlue relative top-1">&#x25BC;</span>  </div>
+                <span className="text-navyBlue relative top-1"><FontAwesomeIcon icon={faChevronDown} /></span>  </div>
               <div className="flex items-center gap-1">
                 <a href="#" className="text-navyBlue font-semibold text-lg">About</a>
-                <span className="text-navyBlue">&#x25BC;</span>
+                <span className="text-navyBlue"><FontAwesomeIcon icon={faChevronDown} /></span>
               </div>
               <div className="flex items-center gap-1">
                 <a href="#" className="text-navyBlue font-semibold text-lg">Resources</a>
-                <span className="text-navyBlue">&#x25BC;</span>
+                <span className="text-navyBlue"><FontAwesomeIcon icon={faChevronDown} /></span>
               </div>
               <a href="#" className="text-navyBlue font-semibold text-lg">Pricing</a>
             </div>

@@ -21,7 +21,7 @@ export const FooterLinks = [
     {
         title: 'Partnerships',
         links: {
-            'Integrtations': '/integrations',
+            'Integrations': '/integrations',
             'Affiliate Program': '/affiliate-program',
             'Law Firm Marketing': '/law-firm-marketing',
     }

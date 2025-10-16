@@ -61,7 +61,7 @@ export default function Hero() {
 			</div>
 		
 
-<div className="flex absolute -bottom-50 left-1/2 transform -translate-x-1/2 gap-6 hidden md:flex">
+<div className="flex absolute -bottom-60 left-1/2 transform -translate-x-1/2 gap-6 hidden md:flex">
 	{
 		HeroCardItems.map((item, index) => (
 			<div key={index} className="right-10 w-80">

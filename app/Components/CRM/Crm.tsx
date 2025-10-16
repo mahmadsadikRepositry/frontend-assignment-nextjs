@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Crm() {
   return (
     <section>
-    <div className="pt-32 bg-white w-full   pb-10 flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 ">
+    <div className="pt-72 bg-white w-full   pb-10 flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 ">
       <div className="w-full md:w-1/2 flex justify-center">
         <Image
           src="/images/CRM-Graphic.png"
@@ -18,7 +18,7 @@ export default function Crm() {
         />
       </div>
       <div className="w-full md:w-1/2 flex flex-col justify-center items-start max-w-lg">
-        <h2 className="text-[#23255A] text-2xl md:text-3xl font-bold mb-2 pt-32">
+        <h2 className="text-[#23255A] text-2xl md:text-3xl font-bold mb-2">
           Your data’s in good hands
         </h2>
         <div className="w-20 h-1 bg-blue mb-4" />

@@ -1,6 +1,26 @@
 import * as React from 'react';
 import { Button } from '@radix-ui/themes';
-// import * as Button from '@radix-ui/react-button';
+import { Card } from '../Card/Card';
+import { HeroCard } from '../Card/HeroCard';
+
+const HeroCardItems = [
+	{
+		title: 'Legal answering service',
+		description: "With 24/7 legal intake, you’ll never miss a potential client’s call.",
+		img: '/icons/Answering.svg'
+	},
+	{
+		title: 'AI intake chatbot',
+		description: 'Turn web leads into clients with a chatbot powered by the latest in AI technology.',
+		img: '/icons/Answering.svg'
+	}
+	,
+	{
+		title: 'Live translation services',
+		description: 'Break through the language barrier and schedule video conferences with live interpreters.',
+		img: '/icons/Translation.svg'
+	}
+];
 
 export default function Hero() {
 	return (
@@ -41,12 +61,17 @@ export default function Hero() {
 					   </a>
 				   </Button>
 			</div>
-			{/* Right side image (optional, if you want to overlay an image) */}
-			
-			{/* <div className="hidden md:block absolute right-0 bottom-0 h-full w-1/2">
-				<img src="/images/hero-agent.png" alt="Agent" className="object-cover h-full w-full" />
-			</div> */}
-			
+		
+
+<div className="flex absolute -bottom-80 left-1/2 transform -translate-x-1/2 gap-6 hidden md:flex">
+	{
+		HeroCardItems.map((item, index) => (
+			<div key={index} className="right-10 w-80">
+				<HeroCard title={item.title} description={item.description} img={item.img} />
+			</div>
+		))
+	}
+</div>
 		</section>
 	);
 }

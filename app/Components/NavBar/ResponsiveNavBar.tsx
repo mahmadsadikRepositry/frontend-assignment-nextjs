@@ -20,47 +20,39 @@ export default function ResponsiveNavBar() {
       >
         <div className="text-[16px] font-semibold text-white flex gap-[10px]">
           Try for free here
-          <FontAwesomeIcon 
-            icon={faArrowRight} 
-            className="w-6 h-6" 
-          />
+          <FontAwesomeIcon icon={faArrowRight} className="w-6 h-6" />
         </div>
       </a>
 
+      {/* Navbar */}
       <header
         className={clsx(
-          "fixed z-[55] transition-all duration-500 ease-in-out w-full flex flex-col gap-4 items-center px-4 py-2 lg:px-8 lg:pt-8 lg:pb-6",
-          "top-[38px] lg:top-0 h-16 lg:h-[134px]"
+          "fixed z-[55] transition-all duration-500 ease-in-out w-full flex flex-col gap-4 lg:gap-2 items-center px-4 py-2 lg:px-8 lg:pt-4 lg:pb-3",
+          "top-[38px] lg:top-0 h-16 lg:h-[100px]"
         )}
         style={{ backgroundColor: "hsla(0, 11%, 96%, 0.85)" }}
       >
-        <div className="hidden lg:flex justify-end items-center gap-8 self-stretch h-[14px] w-full max-w-[1440px] mx-auto">
-          <a
-            className="text-lightGrey text-[20px] underline"
-            href="/help-center"
-          >
+        {/* Top support row */}
+        <div className="hidden lg:flex justify-end items-center gap-8 self-stretch h-[14px] w-full max-w-[1440px] mx-auto text-[18px]">
+          <a className="text-lightGrey underline" href="/help-center">
             Help Center
           </a>
-          <a
-            href="tel:6314008888"
-            className="text-blue font-semibold text-[20px]"
-          >
+          <a href="tel:6314008888" className="text-blue font-semibold">
             (631) 400-8888
           </a>
         </div>
 
+        {/* Main nav row */}
         <nav className="w-full flex flex-row justify-between items-center self-stretch h-[48px] max-w-[1440px] mx-auto">
+          {/* Logo */}
           <Link aria-label="Go to homepage" href="/">
-            <div className="relative w-[267px] h-[42px] lg:w-[293px] lg:h-[48px]">
+            <div className="relative w-[267px] h-[42px] lg:w-[293px] lg:h-[40px]">
               <Image
                 alt="Answering Legal Logo"
                 loading="lazy"
                 decoding="async"
                 fill
-                style={{
-                  objectFit: "contain",
-                  color: "transparent",
-                }}
+                style={{ objectFit: "contain", color: "transparent" }}
                 sizes="(max-width: 1024px) 267px, 293px"
                 src="/images/Answering LegalTM_Blue.png"
               />
@@ -68,55 +60,25 @@ export default function ResponsiveNavBar() {
             </div>
           </Link>
 
-          <div className="flex justify-center items-start gap-2 xl:gap-8 h-[30px]">
-            <div className="relative hidden lg:flex">
-              <div className="group flex flex-col items-center gap-2">
-                <button
-                  data-dropdown-toggle="Products"
-                  className="flex items-center gap-1 font-semibold text-[20px] hover:text-blue text-navyBlue"
-                >
-                  Products
-                  <FontAwesomeIcon
-                    icon={faChevronDown}
-                    className="w-4 h-4 transition-transform duration-300 rotate-0"
-                  />
-                </button>
-                <div className="h-1 rounded-[8px] bg-teal transition-all duration-300 w-0"></div>
+          {/* Desktop nav links */}
+          <div className="flex justify-center items-start gap-2 lg:gap-4 xl:gap-6 h-[30px]">
+            {["Products", "About", "Resources"].map((label) => (
+              <div key={label} className="relative hidden lg:flex">
+                <div className="group flex flex-col items-center gap-2">
+                  <button
+                    data-dropdown-toggle={label}
+                    className="flex items-center gap-1 font-semibold text-[20px] hover:text-blue text-navyBlue"
+                  >
+                    {label}
+                    <FontAwesomeIcon
+                      icon={faChevronDown}
+                      className="w-4 h-4 transition-transform duration-300 rotate-0"
+                    />
+                  </button>
+                  <div className="h-1 rounded-[8px] bg-teal transition-all duration-300 w-0"></div>
+                </div>
               </div>
-            </div>
-
-            <div className="relative hidden lg:flex">
-              <div className="group flex flex-col items-center gap-2">
-                <button
-                  data-dropdown-toggle="About"
-                  className="flex items-center gap-1 font-semibold text-[20px] hover:text-blue text-navyBlue"
-                >
-                  About
-                  <FontAwesomeIcon
-                    icon={faChevronDown}
-                    className="w-4 h-4 transition-transform duration-300 rotate-0"
-                  />
-                </button>
-                <div className="h-1 rounded-[8px] bg-teal transition-all duration-300 w-0"></div>
-              </div>
-            </div>
-
-            <div className="relative hidden lg:flex">
-              <div className="group flex flex-col items-center gap-2">
-                <button
-                  data-dropdown-toggle="Resources"
-                  className="flex items-center gap-1 font-semibold text-[20px] hover:text-blue text-navyBlue"
-                >
-                  Resources
-                  <FontAwesomeIcon
-                    icon={faChevronDown}
-                    className="w-4 h-4 transition-transform duration-300 rotate-0"
-                  />
-                </button>
-                <div className="h-1 rounded-[8px] bg-teal transition-all duration-300 w-0"></div>
-              </div>
-            </div>
-
+            ))}
             <div className="relative hidden lg:flex">
               <div className="group flex flex-col items-center gap-2">
                 <a
@@ -131,37 +93,27 @@ export default function ResponsiveNavBar() {
             </div>
           </div>
 
-          <div className="hidden lg:flex items-center gap-4">
-            <form className="hidden lg:flex items-center gap-2 relative">
-              <button
-                type="button"
-                className="z-10 transition-all duration-700 ease-in-out"
-                aria-label="Search"
-              >
-                <Image
-                  src="/icons/Search.svg"
-                  alt="Search"
-                  width={32}
-                  height={33}
-                  className="w-8 h-8"
-                />
-              </button>
-            </form>
+          {/* Desktop buttons */}
+          <div className="hidden lg:flex items-center gap-3">
+            <button
+              type="button"
+              className="z-10 transition-all duration-700 ease-in-out"
+              aria-label="Search"
+            >
+              <Image src="/icons/Search.svg" alt="Search" width={28} height={28} className="w-6 h-6" />
+            </button>
             <a
-              className="px-4 gap-[10px] rounded-[12px] text-center flex justify-center items-center font-semibold leading-[29.26px] text-base sm:text-[22px] overflow-hidden h-[43px] shrink-0 py-[20px] w-fit h-auto max-h-[43px] bg-blue text-white hover:bg-navyBlue"
+              className="px-3 py-2 lg:px-4 lg:py-2 rounded-[12px] flex justify-center items-center font-semibold leading-[29.26px] text-base sm:text-[22px] overflow-hidden h-[38px] lg:h-[40px] bg-blue text-white hover:bg-navyBlue"
               href="/try-for-free"
             >
               Try for free
             </a>
           </div>
 
+          {/* Mobile menu */}
           <Dialog.Root open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
             <Dialog.Trigger asChild>
-              <button
-                type="button"
-                className="flex lg:hidden"
-                aria-label="Open mobile menu"
-              >
+              <button type="button" className="flex lg:hidden" aria-label="Open mobile menu">
                 <Image
                   alt="Hamburger Icon"
                   loading="lazy"
@@ -179,30 +131,15 @@ export default function ResponsiveNavBar() {
               <Dialog.Content className="fixed top-[102px] bottom-0 left-0 right-0 z-[70] w-full flex flex-col bg-white">
                 <Dialog.Title className="sr-only">Navigation Menu</Dialog.Title>
                 <div className="flex flex-col gap-6 items-start px-8 pt-[88px] bg-navyBlue text-white flex-1 overflow-y-auto">
-                  <div className="w-full">
-                    <button className="flex justify-between items-center w-full pb-4">
-                      <h4 className="text-[24px]">Products</h4>
-                      <FontAwesomeIcon icon={faChevronDown} className="w-6 h-6" />
-                    </button>
-                    <div className="h-[1px] w-full bg-teal"></div>
-                  </div>
-
-                  <div className="w-full">
-                    <button className="flex justify-between items-center w-full pb-4">
-                      <h4 className="text-[24px]">About</h4>
-                      <FontAwesomeIcon icon={faChevronDown} className="w-6 h-6" />
-                    </button>
-                    <div className="h-[1px] w-full bg-teal"></div>
-                  </div>
-
-                  <div className="w-full">
-                    <button className="flex justify-between items-center w-full pb-4">
-                      <h4 className="text-[24px]">Resources</h4>
-                      <FontAwesomeIcon icon={faChevronDown} className="w-6 h-6" />
-                    </button>
-                    <div className="h-[1px] w-full bg-teal"></div>
-                  </div>
-
+                  {["Products", "About", "Resources"].map((label) => (
+                    <div key={label} className="w-full">
+                      <button className="flex justify-between items-center w-full pb-4">
+                        <h4 className="text-[24px]">{label}</h4>
+                        <FontAwesomeIcon icon={faChevronDown} className="w-6 h-6" />
+                      </button>
+                      <div className="h-[1px] w-full bg-teal"></div>
+                    </div>
+                  ))}
                   <div className="w-full">
                     <a className="block pb-4 text-white" href="/answering-service-pricing-plans">
                       <h4 className="text-[24px]">Pricing</h4>

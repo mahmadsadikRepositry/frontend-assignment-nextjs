@@ -23,26 +23,25 @@ const HeroCardItems = [
     img: "/icons/Translation.svg",
   },
 ];
+
 export default function Hero() {
   return (
-    <section className="relative w-full">
+      <section className="relative w-full -mt-[134px] pt-[105px]">
+      {/* Mobile Hero */}
       <div className="md:hidden">
         <div className="relative w-full h-80 bg-cover bg-center hero-bg">
           <div className="absolute inset-0 bg-gradient-to-r from-[#23255A]/80 to-transparent" />
         </div>
-        
         <div className="bg-navyBlue px-6 py-8">
           <h1 className="text-white text-3xl font-bold mb-4 leading-tight">
-            We&#39;re more than an answering service
+            We're more than an answering service
           </h1>
           <p className="text-white text-lg mb-6">
             Answering Legal has everything you need to make sure your firm never
             misses another opportunity.
           </p>
           <div className="mb-6">
-            <span className="text-white font-bold text-xl">
-              Excellent 4.84
-            </span>
+            <span className="text-white font-bold text-xl">Excellent 4.84</span>
             <div className="flex items-center gap-2 mt-2">
               {[...Array(5)].map((_, i) => (
                 <FontAwesomeIcon
@@ -65,20 +64,19 @@ export default function Hero() {
         </div>
       </div>
 
+      {/* Desktop Hero */}
       <div className="hidden md:block relative w-full hero-bg flex items-center bg-cover bg-center">
         <div className="absolute inset-0 bg-gradient-to-r from-[#23255A]/80 to-transparent" />
-        <div className="relative z-10 flex flex-col justify-center px-16 py-24 max-w-xl">
+        <div className="relative z-10 flex flex-col justify-center pl-40 py-12 max-w-xl">
           <h1 className="text-white text-5xl font-bold mb-6 leading-tight">
-            We&#39;re more than an answering service
+            We're more than an answering services
           </h1>
           <p className="text-white text-xl mb-6">
             Answering Legal has everything you need to make sure your firm never
             misses another opportunity.
           </p>
           <div className="mb-6">
-            <span className="text-white font-bold text-2xl">
-              Excellent 4.84
-            </span>
+            <span className="text-white font-bold text-2xl">Excellent 4.84</span>
             <div className="flex items-center gap-2 mt-2">
               {[...Array(5)].map((_, i) => (
                 <FontAwesomeIcon
@@ -101,22 +99,22 @@ export default function Hero() {
         </div>
       </div>
 
+      {/* Hero Cards */}
       <div className="md:hidden bg-white py-12 px-6">
         <div className="flex flex-col items-center gap-3 mb-8">
           <h2 className="text-navyBlue text-2xl font-semibold text-center">
-            Here&#39;s what we can do for your law firm
+            Here's what we can do for your law firm
           </h2>
           <div className="w-full h-[2px] bg-teal max-w-[478px]" />
         </div>
         <div className="flex flex-col gap-6">
           {HeroCardItems.map((item, index) => (
-            <div key={index} className="w-full">
-              <HeroCard
-                title={item.title}
-                description={item.description}
-                img={item.img}
-              />
-            </div>
+            <HeroCard
+              key={index}
+              title={item.title}
+              description={item.description}
+              img={item.img}
+            />
           ))}
         </div>
       </div>
@@ -124,12 +122,13 @@ export default function Hero() {
       <div className="hidden md:block">
         <div
           id="maindiv"
-          className="absolute left-1/2 transform -translate-x-1/2 z-20 flex flex-col items-center gap-3 px-4 w-full max-w-[1120px] bottom-8 lg:bottom-32 xl:bottom-40"
+          className="absolute left-1/2 transform -translate-x-1/2 z-20 flex flex-col items-center gap-3 px-4 w-full bottom-20"
         >
           <h2 className="text-white text-3xl font-semibold text-center">
-            Here&#39;s what we can do for your law firm
+            Here's what we can do for your law firm
           </h2>
-          <div className="w-full h-[2px] bg-[#3CCED7] max-w-[478px] mb-4" />
+          {/* Stretched line */}
+          <div className="w-full h-[2px] bg-[#3CCED7] max-w-[1250px] mb-4" />
         </div>
 
         <div className="flex absolute -bottom-60 left-1/2 transform -translate-x-1/2 gap-6">

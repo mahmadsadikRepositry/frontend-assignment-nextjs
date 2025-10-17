@@ -1,7 +1,5 @@
 import * as React from "react";
 import Image from "next/image";
-import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function IntakeSection() {
   return (

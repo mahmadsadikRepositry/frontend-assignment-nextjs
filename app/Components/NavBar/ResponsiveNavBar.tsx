@@ -13,7 +13,6 @@ export default function ResponsiveNavBar() {
 
   return (
     <>
-      {/* Mobile Try for Free Banner */}
       <a
         id="try-for-free-banner"
         className="lg:hidden fixed left-0 right-0 flex h-[38px] z-[60] justify-center items-center gap-8 flex-1 self-stretch bg-blue"
@@ -28,7 +27,6 @@ export default function ResponsiveNavBar() {
         </div>
       </a>
 
-      {/* Main Header */}
       <header
         className={clsx(
           "fixed z-[55] transition-all duration-500 ease-in-out w-full flex flex-col gap-4 items-center px-4 py-2 lg:px-8 lg:pt-8 lg:pb-6",
@@ -36,7 +34,6 @@ export default function ResponsiveNavBar() {
         )}
         style={{ backgroundColor: "hsla(0, 11%, 96%, 0.85)" }}
       >
-        {/* Top Bar - Desktop Only */}
         <div className="hidden lg:flex justify-end items-center gap-8 self-stretch h-[14px] w-full max-w-[1440px] mx-auto">
           <a
             className="text-lightGrey text-[20px] underline"
@@ -52,9 +49,7 @@ export default function ResponsiveNavBar() {
           </a>
         </div>
 
-        {/* Main Navigation */}
         <nav className="w-full flex flex-row justify-between items-center self-stretch h-[48px] max-w-[1440px] mx-auto">
-          {/* Logo */}
           <Link aria-label="Go to homepage" href="/">
             <div className="relative w-[267px] h-[42px] lg:w-[293px] lg:h-[48px]">
               <Image
@@ -73,7 +68,6 @@ export default function ResponsiveNavBar() {
             </div>
           </Link>
 
-          {/* Desktop Navigation Menu */}
           <div className="flex justify-center items-start gap-2 xl:gap-8 h-[30px]">
             <div className="relative hidden lg:flex">
               <div className="group flex flex-col items-center gap-2">
@@ -137,7 +131,6 @@ export default function ResponsiveNavBar() {
             </div>
           </div>
 
-          {/* Desktop Right Side - Search & CTA */}
           <div className="hidden lg:flex items-center gap-4">
             <form className="hidden lg:flex items-center gap-2 relative">
               <button
@@ -146,7 +139,7 @@ export default function ResponsiveNavBar() {
                 aria-label="Search"
               >
                 <Image
-                  src="/icons/search.svg"
+                  src="/icons/Search.svg"
                   alt="Search"
                   width={32}
                   height={33}
@@ -162,7 +155,6 @@ export default function ResponsiveNavBar() {
             </a>
           </div>
 
-          {/* Mobile Hamburger Menu */}
           <Dialog.Root open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
             <Dialog.Trigger asChild>
               <button

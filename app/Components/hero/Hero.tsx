@@ -26,14 +26,11 @@ const HeroCardItems = [
 export default function Hero() {
   return (
     <section className="relative w-full">
-      {/* Mobile Layout */}
       <div className="md:hidden">
-        {/* Image Section */}
         <div className="relative w-full h-80 bg-cover bg-center hero-bg">
           <div className="absolute inset-0 bg-gradient-to-r from-[#23255A]/80 to-transparent" />
         </div>
         
-        {/* Text Section with Blue Background */}
         <div className="bg-navyBlue px-6 py-8">
           <h1 className="text-white text-3xl font-bold mb-4 leading-tight">
             We&#39;re more than an answering service
@@ -68,7 +65,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Desktop Layout */}
       <div className="hidden md:block relative w-full hero-bg flex items-center bg-cover bg-center">
         <div className="absolute inset-0 bg-gradient-to-r from-[#23255A]/80 to-transparent" />
         <div className="relative z-10 flex flex-col justify-center px-16 py-24 max-w-xl">
@@ -105,7 +101,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Mobile Hero Cards Section */}
       <div className="md:hidden bg-white py-12 px-6">
         <div className="flex flex-col items-center gap-3 mb-8">
           <h2 className="text-navyBlue text-2xl font-semibold text-center">
@@ -126,9 +121,7 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Desktop Hero Cards Section */}
       <div className="hidden md:block">
-        {/* Centered heading + separator above the hero cards (positioned over the hero background) */}
         <div
           id="maindiv"
           className="absolute left-1/2 transform -translate-x-1/2 z-20 flex flex-col items-center gap-3 px-4 w-full max-w-[1120px] bottom-8 lg:bottom-32 xl:bottom-40"

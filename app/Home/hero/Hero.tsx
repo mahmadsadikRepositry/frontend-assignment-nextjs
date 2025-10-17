@@ -25,9 +25,9 @@ const HeroCardItems = [
 
 export default function Hero() {
   return (
-    <section className="relative w-full -mt-[134px] pt-[105px]">
+    <section className="relative w-full -mt-[134px] pt-[152px]">
       <div className="md:hidden">
-        <div className="relative w-full h-80 bg-cover bg-center hero-bg">
+        <div className="relative w-full h-80 bg-cover bg-center hero-bg-mobile">
           <div className="absolute inset-0 bg-gradient-to-r from-[#23255A]/80 to-transparent" />
         </div>
         <div className="bg-navyBlue px-6 py-8">

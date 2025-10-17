@@ -129,7 +129,6 @@ html {
   background-color: rgb(60 206 215 / var(--tw-bg-opacity)); /* #3CCED7 */
 }
 
-/* Hero background moved from inline style to CSS class for better separation */
 .hero-bg {
   background-image: url('/images/LandingHero.jpg');
   background-size: cover;
@@ -169,4 +168,10 @@ html {
 }
 .scrollbar-hide::-webkit-scrollbar {
   display: none; 
+}
+
+.hero-bg-mobile {
+  background-image: url('/images/LandingHeroMobile.jpg');
+  background-size: cover;
+  background-position: center;
 }

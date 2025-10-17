@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function IntakeSection() {
   return (
-    <section>
+    <section className="px-80">
       <div className="pt-50 bg-white w-full pb-20 flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 ">
         <div className="w-full md:w-1/2 flex flex-col justify-center items-start max-w-lg">
           <h2 className="text-2xl md:text-3xl font-bold mb-2">

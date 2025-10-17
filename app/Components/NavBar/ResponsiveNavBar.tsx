@@ -26,8 +26,8 @@ export default function ResponsiveNavBar() {
 
       <header
         className={clsx(
-          "fixed z-[55] transition-all duration-500 ease-in-out w-full flex flex-col gap-4 lg:gap-2 items-center px-4 py-2 lg:px-8 lg:pt-4 lg:pb-3",
-          "top-[38px] lg:top-0 h-20 lg:h-[120px]"
+          'fixed z-[55] transition-all duration-500 ease-in-out w-full flex flex-col gap-4 lg:gap-2 items-center px-4 py-2 lg:px-8 lg:pt-4 lg:pb-3',
+          'top-[38px] lg:top-0 h-20 lg:h-[120px]',
         )}
         style={{ backgroundColor: 'hsla(0, 11%, 96%, 0.85)' }}
       >

@@ -19,7 +19,7 @@ export default function ResponsiveNavBar() {
         href="/try-for-free"
       >
         <div className="text-[16px] font-semibold text-white flex gap-[10px]">
-          Try for free here
+          Try for free
           <FontAwesomeIcon icon={faArrowRight} className="w-6 h-6" />
         </div>
       </a>
@@ -106,7 +106,7 @@ export default function ResponsiveNavBar() {
               className="px-3 py-2 lg:px-4 lg:py-2 rounded-[12px] flex justify-center items-center font-semibold leading-[29.26px] text-base sm:text-[22px] overflow-hidden h-[38px] lg:h-[40px] bg-blue text-white hover:bg-navyBlue"
               href="/try-for-free"
             >
-              Try for free
+              Try for frees
             </a>
           </div>
 

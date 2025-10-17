@@ -1,4 +1,4 @@
-import { Card } from "../Card/Card";
+import { Card } from "@/app/Components/Card/Card";
 import Image from "next/image";
 
 export const ArticleCard = ({

@@ -33,7 +33,7 @@ export default function Hero() {
         </div>
         <div className="bg-navyBlue px-6 py-8">
           <h1 className="text-white text-3xl font-bold mb-4 leading-tight">
-            We&#39;re more than an answering service
+            We're more than an answering service
           </h1>
           <p className="text-white text-lg mb-6">
             Answering Legal has everything you need to make sure your firm never
@@ -68,7 +68,7 @@ export default function Hero() {
   <div className="absolute inset-0 bg-gradient-to-r from-[#23255A]/80 to-transparent" />
   <div className="relative z-10 flex flex-col justify-center pl-40 py-12 max-w-4xl">
     <h1 className="text-white text-5xl font-bold mb-6 leading-tight max-w-[800px]">
-      We&#39;re more than an answering service
+      We're more than an answering service
     </h1>
     <p className="text-white text-xl mb-6 max-w-[600px]">
       Answering Legal has everything you need to make sure your firm never
@@ -102,7 +102,7 @@ export default function Hero() {
       <div className="md:hidden bg-white py-12 px-6">
         <div className="flex flex-col items-center gap-3 mb-8">
           <h2 className="text-navyBlue text-2xl font-semibold text-center">
-            Here&#39;s what we can do for your law firm
+            Here's what we can do for your law firm
           </h2>
           <div className="w-full h-[2px] bg-teal max-w-[478px]" />
         </div>
@@ -124,7 +124,7 @@ export default function Hero() {
           className="absolute left-1/2 transform -translate-x-1/2 z-20 flex flex-col items-center gap-3 px-4 w-full bottom-20"
         >
           <h2 className="text-white text-3xl font-semibold text-center">
-            Here&#39;s what we can do for your law firm
+            Here's what we can do for your law firm
           </h2>
           {/* Stretched line */}
           <div className="w-full h-[2px] bg-[#3CCED7] max-w-[1250px] mb-4" />

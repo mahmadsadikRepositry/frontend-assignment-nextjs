@@ -1,8 +1,8 @@
-import Hero from "./Components/hero/Hero";
-import Crm from "./Components/CRM/Crm";
-import { ArticleSection } from "./Components/ArticleSection/ArticleSection";
+import Crm from "./Home/CRM/Crm";
 import ServiceForm from "./Components/ServiceForm/ServiceForm";
-import IntakeSection from "./Components/intakeSection/IntakeSection"
+import IntakeSection from "./Home/intakeSection/IntakeSection"
+import { ArticleSection } from "./Home/ArticleSection/ArticleSection";
+import Hero from "./Home/hero/Hero";
 
 
 export default function Home() {

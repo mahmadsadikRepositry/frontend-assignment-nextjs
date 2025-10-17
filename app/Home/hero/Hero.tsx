@@ -63,7 +63,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Desktop Hero */}
 <div className="hidden md:block relative w-full hero-bg flex items-center bg-cover bg-center">
   <div className="absolute inset-0 bg-gradient-to-r from-[#23255A]/80 to-transparent" />
   <div className="relative z-10 flex flex-col justify-center pl-40 py-12 max-w-4xl">
@@ -98,7 +97,6 @@ export default function Hero() {
   </div>
 </div>
 
-      {/* Hero Cards */}
       <div className="md:hidden bg-white py-12 px-6">
         <div className="flex flex-col items-center gap-3 mb-8">
           <h2 className="text-navyBlue text-2xl font-semibold text-center">
@@ -126,7 +124,6 @@ export default function Hero() {
           <h2 className="text-white text-3xl font-semibold text-center">
             Here's what we can do for your law firm
           </h2>
-          {/* Stretched line */}
           <div className="w-full h-[2px] bg-[#3CCED7] max-w-[1250px] mb-4" />
         </div>
 

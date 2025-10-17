@@ -24,7 +24,6 @@ export default function ResponsiveNavBar() {
         </div>
       </a>
 
-      {/* Navbar */}
       <header
         className={clsx(
           "fixed z-[55] transition-all duration-500 ease-in-out w-full flex flex-col gap-4 lg:gap-2 items-center px-4 py-2 lg:px-8 lg:pt-4 lg:pb-3",
@@ -32,7 +31,6 @@ export default function ResponsiveNavBar() {
         )}
         style={{ backgroundColor: "hsla(0, 11%, 96%, 0.85)" }}
       >
-        {/* Top support row */}
         <div className="hidden lg:flex justify-end items-center gap-8 self-stretch h-[14px] w-full max-w-[1440px] mx-auto text-[18px]">
           <a className="text-lightGrey underline" href="/help-center">
             Help Center
@@ -42,9 +40,7 @@ export default function ResponsiveNavBar() {
           </a>
         </div>
 
-        {/* Main nav row */}
         <nav className="w-full flex flex-row justify-between items-center self-stretch h-[70px] max-w-[1440px] mx-auto">
-          {/* Logo */}
           <Link aria-label="Go to homepage" href="/">
             <div className="relative w-[320px] h-[60px] lg:w-[400px] lg:h-[70px]">
               <Image
@@ -60,7 +56,6 @@ export default function ResponsiveNavBar() {
             </div>
           </Link>
 
-          {/* Desktop nav links */}
           <div className="flex justify-center items-start gap-2 lg:gap-4 xl:gap-6 h-[30px]">
             {["Products", "About", "Resources"].map((label) => (
               <div key={label} className="relative hidden lg:flex">
@@ -93,7 +88,6 @@ export default function ResponsiveNavBar() {
             </div>
           </div>
 
-          {/* Desktop buttons */}
           <div className="hidden lg:flex items-center gap-3">
             <button
               type="button"
@@ -110,7 +104,6 @@ export default function ResponsiveNavBar() {
             </a>
           </div>
 
-          {/* Mobile menu */}
           <Dialog.Root open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
             <Dialog.Trigger asChild>
               <button type="button" className="flex lg:hidden" aria-label="Open mobile menu">

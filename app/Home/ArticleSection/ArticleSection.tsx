@@ -52,7 +52,6 @@ export const ArticleSection = () => {
         </h2>
 
         <div className="relative flex items-center">
-     {/* Left Arrow */}
 <button
   onClick={handlePrev}
   className="absolute left-[-40px] top-1/2 transform -translate-y-1/2 z-10"
@@ -66,7 +65,6 @@ export const ArticleSection = () => {
   </div>
 </button>
 
-{/* Scrollable articles */}
 <div
   ref={carouselRef}
   className="flex overflow-hidden gap-6 scroll-smooth px-2"

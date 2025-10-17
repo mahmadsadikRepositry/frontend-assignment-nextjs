@@ -54,8 +54,7 @@ export function useServiceForm() {
     setSubmitting(true);
     try {
       await new Promise((res) => setTimeout(res, 800));
-      console.log("Form Data", values);
-      setSuccess("Thanks — we sent you to plans & pricing.");
+      setSuccess("Thanks — we've sent you a confirmation email!");
       setValues({
         firstName: "",
         lastName: "",

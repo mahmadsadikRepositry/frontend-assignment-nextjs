@@ -42,47 +42,73 @@ export const ArticleSection = () => {
   };
 
   return (
-    <section className="py-12 relative">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-8">
-          Want to learn more? Read our articles on legal intake.
-        </h2>
+    <section className="py-12 sm:py-16 relative">
+  <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-6 sm:mb-8 lg:mb-10 leading-snug max-w-4xl mx-auto">
+      Want to learn more? Read our articles on legal intake.
+    </h2>
 
-        <div className="relative flex items-center">
-          <button
-            onClick={handlePrev}
-            className="absolute left-[-40px] top-1/2 transform -translate-y-1/2 z-10"
-          >
-            <div className="w-12 h-12 flex items-center justify-center rounded-full border border-gray-300 cursor-pointer ml-2">
-              <FontAwesomeIcon icon={faChevronLeft} size="xl" className="text-navyBlue" />
-            </div>
-          </button>
-
-          <div ref={carouselRef} className="flex overflow-hidden gap-6 scroll-smooth px-2">
-            {ArticleItems.map((item, i) => (
-              <div key={i} className="flex-shrink-0 w-[calc(33.333%-1rem)]">
-                <ArticleCard
-                  title={item.title}
-                  description={item.description}
-                  img={item.img}
-                  date={item.date}
-                  category={item.category}
-                />
-              </div>
-            ))}
-          </div>
-
-          {/* Right Arrow */}
-          <button
-            onClick={handleNext}
-            className="absolute right-[-40px] top-1/2 transform -translate-y-1/2 z-10"
-          >
-            <div className="w-12 h-12 flex items-center justify-center rounded-full border border-gray-300 cursor-pointer mr-2">
-              <FontAwesomeIcon icon={faChevronRight} size="xl" className="text-navyBlue" />
-            </div>
-          </button>
+    <div className="relative">
+      <button
+        onClick={handlePrev}
+        className="hidden md:flex absolute -left-2 lg:-left-4 top-1/2 -translate-y-1/2 z-10"
+        aria-label="Previous articles"
+      >
+        <div className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-full border border-gray-200 bg-white shadow-sm hover:bg-gray-100 transition">
+          <FontAwesomeIcon
+            icon={faChevronLeft}
+            size="lg"
+            className="text-navyBlue"
+          />
         </div>
+      </button>
+
+      <div
+        ref={carouselRef}
+        className="flex overflow-x-auto scroll-smooth gap-4 sm:gap-6 px-1 sm:px-2 md:px-4 snap-x snap-mandatory scrollbar-hide"
+        aria-label="Article carousel"
+      >
+        {ArticleItems.map((item, i) => (
+          <div
+            key={i}
+            className="flex-shrink-0 w-[88%] xs:w-[75%] sm:w-[48%] md:w-[32%] lg:w-[30%] snap-start"
+          >
+            <ArticleCard
+              title={item.title}
+              description={item.description}
+              img={item.img}
+              date={item.date}
+              category={item.category}
+            />
+          </div>
+        ))}
       </div>
-    </section>
+
+      <button
+        onClick={handleNext}
+        className="hidden md:flex absolute -right-2 lg:-right-4 top-1/2 -translate-y-1/2 z-10"
+        aria-label="Next articles"
+      >
+        <div className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-full border border-gray-200 bg-white shadow-sm hover:bg-gray-100 transition">
+          <FontAwesomeIcon
+            icon={faChevronRight}
+            size="lg"
+            className="text-navyBlue"
+          />
+        </div>
+      </button>
+    </div>
+
+    <div className="mt-8 sm:mt-10 flex justify-center">
+      <a
+        href="/blog"
+        className="inline-flex items-center justify-center px-5 py-2.5 sm:px-6 sm:py-3 rounded-xl font-semibold text-white bg-blue hover:bg-navyBlue transition-all duration-300 text-sm sm:text-base shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+      >
+        Go to blog
+      </a>
+    </div>
+  </div>
+</section>
+
   );
 };

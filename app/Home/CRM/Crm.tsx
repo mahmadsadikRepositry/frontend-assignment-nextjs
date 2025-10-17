@@ -17,48 +17,59 @@ export default function Crm() {
             priority
           />
         </div>
-        <div className="w-full md:w-1/2 flex flex-col justify-center items-start max-w-lg">
-          <h2 className="text-2xl md:text-3xl font-bold mb-2">Your data’s in good hands</h2>
-          <div className="w-full h-[2px] bg-[#3CCED7] max-w-[478px] mb-4" aria-hidden="true" />
-          <p className="text-gray-700 text-base md:text-lg mb-6">
-            Our partnership with your CRM enables a seamless flow of information.
-          </p>
-          <ul className="space-y-4 mb-8">
-            <li className="flex items-start gap-3">
-              <span className="text-blue text-xl">
-                <FontAwesomeIcon icon={faCircleCheck} className="text-blue-500" />
-              </span>
-              <span className="text-gray-800">
-                Answering Legal’s receptionists take down exactly the information you need.
-              </span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-blue text-xl">
-                <FontAwesomeIcon icon={faCircleCheck} className="text-blue-500" />
-              </span>
-              <span className="text-gray-800">
-                Through native API integrations with our proprietary software, we make sure it’s
-                immediately where you need it to be.
-              </span>
-              ``
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-blue text-xl">
-                <FontAwesomeIcon icon={faCircleCheck} className="text-blue-500" />
-              </span>
-              <span className="text-gray-800">
-                All you’ll have to do is open your CRM and follow up to secure your new client’s
-                business.
-              </span>
-            </li>
-          </ul>
-          <a
-            className="px-4 gap-[10px] rounded-[12px] text-center flex justify-center items-center font-semibold text-base sm:text-[22px] overflow-hidden h-[43px] shrink-0 py-[20px] w-fit h-auto max-h-[43px] bg-blue text-white hover:bg-navyBlue"
-            href="/try-for-free"
-          >
-            See our pricing
-          </a>
-        </div>
+        <div className="w-full md:w-1/2 flex flex-col justify-center items-start max-w-lg px-4 sm:px-0">
+  <h2 className="text-2xl sm:text-3xl font-bold mb-3 text-gray-900 text-balance">
+    Your data’s in good hands
+  </h2>
+
+  <div
+    className="w-20 sm:w-32 h-[3px] bg-[#3CCED7] rounded-full mb-5"
+    aria-hidden="true"
+  ></div>
+
+  <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed mb-6">
+    Our partnership with your CRM enables a seamless flow of information.
+  </p>
+
+  <ul className="space-y-4 mb-8 text-sm sm:text-base">
+    <li className="flex items-start gap-3">
+      <FontAwesomeIcon
+        icon={faCircleCheck}
+        className="w-5 h-5 text-blue-500 flex-shrink-0 mt-[2px]"/>
+      
+      <span className="text-gray-800 leading-snug">
+        Answering Legal’s receptionists take down exactly the information you need.
+      </span>
+    </li>
+
+    <li className="flex items-start gap-3">
+      <FontAwesomeIcon
+        icon={faCircleCheck}
+        className="w-5 h-5 text-blue-500 flex-shrink-0 mt-[2px]"/>
+      <span className="text-gray-800 leading-snug">
+        Through native API integrations with our proprietary software, we make sure it’s immediately where you need it to be.
+      </span>
+    </li>
+
+    <li className="flex items-start gap-3">
+      <FontAwesomeIcon
+        icon={faCircleCheck}
+        className="w-5 h-5 text-blue-500 flex-shrink-0 mt-[2px]"/>
+      <span className="text-gray-800 leading-snug">
+        All you’ll have to do is open your CRM and follow up to secure your new client’s business.
+      </span>
+    </li>
+  </ul>
+
+  <a
+    href="/try-for-free"
+    className="flex justify-center items-center gap-2 px-6 py-3 rounded-xl font-semibold text-white bg-blue hover:bg-navyBlue transition-all duration-300 text-sm sm:text-lg"
+  >
+    See our pricing
+  </a>
+</div>
+
+
       </div>
     </section>
   );

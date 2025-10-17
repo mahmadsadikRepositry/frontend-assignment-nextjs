@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 export type FormValues = {
   firstName: string;
@@ -12,11 +12,11 @@ export type FormErrors = Partial<Record<keyof FormValues, string>>;
 
 export function useServiceForm() {
   const [values, setValues] = useState<FormValues>({
-    firstName: "",
-    lastName: "",
-    company: "",
-    email: "",
-    phone: "",
+    firstName: '',
+    lastName: '',
+    company: '',
+    email: '',
+    phone: '',
   });
   const [errors, setErrors] = useState<FormErrors>({});
   const [submitting, setSubmitting] = useState(false);
@@ -25,15 +25,13 @@ export function useServiceForm() {
 
   function validate(values: FormValues) {
     const e: FormErrors = {};
-    if (!values.firstName.trim()) e.firstName = "First name is required";
-    if (!values.lastName.trim()) e.lastName = "Last name is required";
-    if (!values.company.trim()) e.company = "Company name is required";
-    if (!values.email.trim()) e.email = "Email is required";
-    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(values.email))
-      e.email = "Enter a valid email";
-    if (!values.phone.trim()) e.phone = "Phone is required";
-    else if (!/^[0-9()+\-\s]{7,}$/.test(values.phone))
-      e.phone = "Enter a valid phone number";
+    if (!values.firstName.trim()) e.firstName = 'First name is required';
+    if (!values.lastName.trim()) e.lastName = 'Last name is required';
+    if (!values.company.trim()) e.company = 'Company name is required';
+    if (!values.email.trim()) e.email = 'Email is required';
+    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(values.email)) e.email = 'Enter a valid email';
+    if (!values.phone.trim()) e.phone = 'Phone is required';
+    else if (!/^[0-9()+\-\s]{7,}$/.test(values.phone)) e.phone = 'Enter a valid phone number';
     return e;
   }
 
@@ -53,18 +51,18 @@ export function useServiceForm() {
 
     setSubmitting(true);
     try {
-      await new Promise((res) => setTimeout(res, 800));
+      await new Promise(res => setTimeout(res, 800));
       setSuccess("Thanks — we've sent you a confirmation email!");
       setValues({
-        firstName: "",
-        lastName: "",
-        company: "",
-        email: "",
-        phone: "",
+        firstName: '',
+        lastName: '',
+        company: '',
+        email: '',
+        phone: '',
       });
       setErrors({});
     } catch {
-      setServerError("Something went wrong. Please try again later.");
+      setServerError('Something went wrong. Please try again later.');
     } finally {
       setSubmitting(false);
     }
@@ -72,9 +70,9 @@ export function useServiceForm() {
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
     const { name, value } = e.target;
-    setValues((v) => ({ ...v, [name]: value }));
-    console.log("errors", errors);
-    setErrors((prev) => ({ ...prev, [name]: undefined }));
+    setValues(v => ({ ...v, [name]: value }));
+    console.log('errors', errors);
+    setErrors(prev => ({ ...prev, [name]: undefined }));
   }
 
   return {

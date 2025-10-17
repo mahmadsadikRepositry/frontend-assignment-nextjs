@@ -1,5 +1,5 @@
-import { Card } from "@/app/Components/Card/Card";
-import Image from "next/image";
+import { Card } from '@/app/Components/Card/Card';
+import Image from 'next/image';
 
 export const ArticleCard = ({
   title,
@@ -38,9 +38,7 @@ export const ArticleCard = ({
             </div>
             <h3 className="text-lg font-semibold mb-2">{title}</h3>
           </div>
-          <p className="text-gray-600 overflow-hidden text-ellipsis line-clamp-2">
-            {description}
-          </p>
+          <p className="text-gray-600 overflow-hidden text-ellipsis line-clamp-2">{description}</p>
         </div>
       </div>
     </Card>

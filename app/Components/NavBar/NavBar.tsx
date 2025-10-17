@@ -1,7 +1,7 @@
-import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Link from "next/link";
-import Image from "next/image";
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Link from 'next/link';
+import Image from 'next/image';
 export default function NavBar() {
   return (
     <header className="custom-navbar-bg w-full">
@@ -10,10 +10,7 @@ export default function NavBar() {
           <a href="/help-center" className="text-lightGrey text-base underline">
             Support
           </a>
-          <a
-            href="tel:6316869700"
-            className="custom-support-number font-semibold"
-          >
+          <a href="tel:6316869700" className="custom-support-number font-semibold">
             (631) 686-9700
           </a>
         </div>
@@ -33,15 +30,12 @@ export default function NavBar() {
           <nav className="w-1/3 flex justify-center items-center gap-10">
             <div className="flex items-center gap-8">
               <div className="flex items-center gap-1">
-                <a
-                  href="#"
-                  className="text-navyBlue font-semibold text-lg hover:text-blue"
-                >
+                <a href="#" className="text-navyBlue font-semibold text-lg hover:text-blue">
                   Products
                 </a>
                 <span className="text-navyBlue relative top-1">
                   <FontAwesomeIcon icon={faChevronDown} />
-                </span>{" "}
+                </span>{' '}
               </div>
               <div className="flex items-center gap-1 hover:text-blue">
                 <a href="#" className="text-navyBlue font-semibold text-lg">

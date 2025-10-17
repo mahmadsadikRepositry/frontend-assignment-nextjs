@@ -1,14 +1,14 @@
-import { Montserrat } from "next/font/google";
-import "./globals.css";
-import "./fontawesome";
-import ResponsiveNavBar from "./Components/NavBar/ResponsiveNavBar";
-import { Footer } from "./Components/Footer/Footer";
+import { Montserrat } from 'next/font/google';
+import './globals.css';
+import './fontawesome';
+import ResponsiveNavBar from './Components/NavBar/ResponsiveNavBar';
+import { Footer } from './Components/Footer/Footer';
 
 const montserrat = Montserrat({
-  subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"], // all weights
-  variable: "--font-montserrat",
-  display: "swap",
+  subsets: ['latin'],
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'], // all weights
+  variable: '--font-montserrat',
+  display: 'swap',
 });
 
 export default function RootLayout({

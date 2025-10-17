@@ -25,7 +25,7 @@ export function Wrapper({ children, as, className, max = '7xl' }: WrapperProps) 
         // container base: centered, responsive padding
         maxMap[max],
         'mx-auto px-4 sm:px-6 lg:px-8',
-        className
+        className,
       )}
     >
       {children}

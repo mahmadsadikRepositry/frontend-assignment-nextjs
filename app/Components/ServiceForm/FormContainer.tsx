@@ -1,7 +1,7 @@
-import React from "react";
-import clsx from "clsx";
-import FormInput from "./FormInput";
-import { FormValues, FormErrors } from "./useServiceForm";
+import React from 'react';
+import clsx from 'clsx';
+import FormInput from './FormInput';
+import { FormValues, FormErrors } from './useServiceForm';
 
 type FormContainerProps = {
   values: FormValues;
@@ -26,26 +26,17 @@ export default function FormContainer({
     <div className="lg:col-span-6">
       <div className="bg-white text-[#0b1630] rounded-2xl shadow-lg p-6 sm:p-8 lg:p-10 max-w-lg mx-auto">
         <h3 className="text-xl sm:text-2xl font-bold mb-4">
-          Tell us about yourself. We'll show you all of our pricing
-          information on the next page.
+          Tell us about yourself. We'll show you all of our pricing information on the next page.
         </h3>
 
         {serverError && (
-          <div className="mb-4 rounded-md bg-red-50 p-3 text-sm text-red-700">
-            {serverError}
-          </div>
+          <div className="mb-4 rounded-md bg-red-50 p-3 text-sm text-red-700">{serverError}</div>
         )}
         {success && (
-          <div className="mb-4 rounded-md bg-green-50 p-3 text-sm text-green-800">
-            {success}
-          </div>
+          <div className="mb-4 rounded-md bg-green-50 p-3 text-sm text-green-800">{success}</div>
         )}
 
-        <form
-          onSubmit={onSubmit}
-          className="space-y-4"
-          aria-label="Service inquiry form"
-        >
+        <form onSubmit={onSubmit} className="space-y-4" aria-label="Service inquiry form">
           <FormInput
             id="firstName"
             name="firstName"
@@ -107,13 +98,11 @@ export default function FormContainer({
               type="submit"
               disabled={submitting}
               className={clsx(
-                "inline-flex items-center justify-center rounded-full bg-blue-500 text-white font-semibold px-6 py-3 text-base shadow-md transition",
-                submitting
-                  ? "opacity-60 cursor-not-allowed"
-                  : "hover:shadow-lg hover:bg-blue-600"
+                'inline-flex items-center justify-center rounded-full bg-blue-500 text-white font-semibold px-6 py-3 text-base shadow-md transition',
+                submitting ? 'opacity-60 cursor-not-allowed' : 'hover:shadow-lg hover:bg-blue-600',
               )}
             >
-              {submitting ? "Sending…" : "See plans & pricing"}
+              {submitting ? 'Sending…' : 'See plans & pricing'}
             </button>
           </div>
         </form>

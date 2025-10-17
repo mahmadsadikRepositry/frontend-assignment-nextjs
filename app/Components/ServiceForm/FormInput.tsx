@@ -1,5 +1,5 @@
-import React from "react";
-import clsx from "clsx";
+import React from 'react';
+import clsx from 'clsx';
 
 type FormInputProps = {
   id: string;
@@ -17,7 +17,7 @@ export default function FormInput({
   id,
   name,
   label,
-  type = "text",
+  type = 'text',
   value,
   onChange,
   error,
@@ -41,8 +41,8 @@ export default function FormInput({
         aria-describedby={error ? `${id}-error` : undefined}
         placeholder={placeholder}
         className={clsx(
-          "mt-1 block w-full rounded-md px-3 py-2 text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500",
-          error ? "border-red-500" : "border border-slate-300"
+          'mt-1 block w-full rounded-md px-3 py-2 text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500',
+          error ? 'border-red-500' : 'border border-slate-300',
         )}
       />
       {error && (

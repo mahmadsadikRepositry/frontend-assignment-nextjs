@@ -1,20 +1,18 @@
-"use client";
+'use client';
 
-import { faChevronCircleLeft, faChevronLeft, faChevronRight, faCircleChevronLeft, faCircleChevronRight } from "@fortawesome/free-solid-svg-icons";
-import { ArticleCard } from "./ArticleCard";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState, useRef } from "react";
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { ArticleCard } from './ArticleCard';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useState, useRef } from 'react';
 
-const TestArticle = 
-  {
-    title: "How Viable Is Remote Work For Lawyers?",
-    description:
-      "This month on the Answering Legal blog, we’ll be covering remote work in the legal world. Since the rapid adaptations required by quarantine during",
-    img: "/images/ArticlePlaceholder.jpg",
-    category: "Lawyer Wellness",
-    date: "Aug 15, 2023",
-  }
-
+const TestArticle = {
+  title: 'How Viable Is Remote Work For Lawyers?',
+  description:
+    'This month on the Answering Legal blog, we’ll be covering remote work in the legal world. Since the rapid adaptations required by quarantine during',
+  img: '/images/ArticlePlaceholder.jpg',
+  category: 'Lawyer Wellness',
+  date: 'Aug 15, 2023',
+};
 
 const ArticleItems = Array(5).fill(TestArticle);
 export const ArticleSection = () => {
@@ -28,8 +26,7 @@ export const ArticleSection = () => {
   };
 
   const handleNext = () => {
-    const newIndex =
-      index + 3 >= ArticleItems.length ? ArticleItems.length - 3 : index + 1;
+    const newIndex = index + 3 >= ArticleItems.length ? ArticleItems.length - 3 : index + 1;
     setIndex(newIndex);
     scrollToIndex(newIndex);
   };
@@ -40,7 +37,7 @@ export const ArticleSection = () => {
     const childWidth = container.scrollWidth / ArticleItems.length;
     container.scrollTo({
       left: childWidth * i,
-      behavior: "smooth",
+      behavior: 'smooth',
     });
   };
 
@@ -52,51 +49,40 @@ export const ArticleSection = () => {
         </h2>
 
         <div className="relative flex items-center">
-     {/* Left Arrow */}
-<button
-  onClick={handlePrev}
-  className="absolute left-[-40px] top-1/2 transform -translate-y-1/2 z-10"
->
-  <div className="w-12 h-12 flex items-center justify-center rounded-full border border-gray-300 cursor-pointer ml-2">
-    <FontAwesomeIcon
-      icon={faChevronLeft}
-      size="xl"
-      className="text-navyBlue"
-    />
-  </div>
-</button>
+          {/* Left Arrow */}
+          <button
+            onClick={handlePrev}
+            className="absolute left-[-40px] top-1/2 transform -translate-y-1/2 z-10"
+          >
+            <div className="w-12 h-12 flex items-center justify-center rounded-full border border-gray-300 cursor-pointer ml-2">
+              <FontAwesomeIcon icon={faChevronLeft} size="xl" className="text-navyBlue" />
+            </div>
+          </button>
 
-{/* Scrollable articles */}
-<div
-  ref={carouselRef}
-  className="flex overflow-hidden gap-6 scroll-smooth px-2"
->
-  {ArticleItems.map((item, i) => (
-    <div key={i} className="flex-shrink-0 w-[calc(33.333%-1rem)]">
-      <ArticleCard
-        title={item.title}
-        description={item.description}
-        img={item.img}
-        date={item.date}
-        category={item.category}
-      />
-    </div>
-  ))}
-</div>
+          {/* Scrollable articles */}
+          <div ref={carouselRef} className="flex overflow-hidden gap-6 scroll-smooth px-2">
+            {ArticleItems.map((item, i) => (
+              <div key={i} className="flex-shrink-0 w-[calc(33.333%-1rem)]">
+                <ArticleCard
+                  title={item.title}
+                  description={item.description}
+                  img={item.img}
+                  date={item.date}
+                  category={item.category}
+                />
+              </div>
+            ))}
+          </div>
 
-{/* Right Arrow */}
-<button
-  onClick={handleNext}
-  className="absolute right-[-40px] top-1/2 transform -translate-y-1/2 z-10"
->
-  <div className="w-12 h-12 flex items-center justify-center rounded-full border border-gray-300 cursor-pointer mr-2">
-    <FontAwesomeIcon
-      icon={faChevronRight}
-      size="xl"
-      className="text-navyBlue"
-    />
-  </div>
-</button>
+          {/* Right Arrow */}
+          <button
+            onClick={handleNext}
+            className="absolute right-[-40px] top-1/2 transform -translate-y-1/2 z-10"
+          >
+            <div className="w-12 h-12 flex items-center justify-center rounded-full border border-gray-300 cursor-pointer mr-2">
+              <FontAwesomeIcon icon={faChevronRight} size="xl" className="text-navyBlue" />
+            </div>
+          </button>
         </div>
       </div>
     </section>

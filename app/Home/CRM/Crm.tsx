@@ -1,7 +1,7 @@
-import * as React from "react";
-import Image from "next/image";
-import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import * as React from 'react';
+import Image from 'next/image';
+import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Crm() {
   return (
@@ -18,53 +18,37 @@ export default function Crm() {
           />
         </div>
         <div className="w-full md:w-1/2 flex flex-col justify-center items-start max-w-lg">
-          <h2 className="text-2xl md:text-3xl font-bold mb-2">
-            Your data’s in good hands
-          </h2>
-          <div
-            className="w-full h-[2px] bg-[#3CCED7] max-w-[478px] mb-4"
-            aria-hidden="true"
-          />
+          <h2 className="text-2xl md:text-3xl font-bold mb-2">Your data’s in good hands</h2>
+          <div className="w-full h-[2px] bg-[#3CCED7] max-w-[478px] mb-4" aria-hidden="true" />
           <p className="text-gray-700 text-base md:text-lg mb-6">
-            Our partnership with your CRM enables a seamless flow of
-            information.
+            Our partnership with your CRM enables a seamless flow of information.
           </p>
           <ul className="space-y-4 mb-8">
             <li className="flex items-start gap-3">
               <span className="text-blue text-xl">
-                <FontAwesomeIcon
-                  icon={faCircleCheck}
-                  className="text-blue-500"
-                />
+                <FontAwesomeIcon icon={faCircleCheck} className="text-blue-500" />
               </span>
               <span className="text-gray-800">
-                Answering Legal’s receptionists take down exactly the
-                information you need.
+                Answering Legal’s receptionists take down exactly the information you need.
               </span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-blue text-xl">
-                <FontAwesomeIcon
-                  icon={faCircleCheck}
-                  className="text-blue-500"
-                />
+                <FontAwesomeIcon icon={faCircleCheck} className="text-blue-500" />
               </span>
               <span className="text-gray-800">
-                Through native API integrations with our proprietary software,
-                we make sure it’s immediately where you need it to be.
+                Through native API integrations with our proprietary software, we make sure it’s
+                immediately where you need it to be.
               </span>
               ``
             </li>
             <li className="flex items-start gap-3">
               <span className="text-blue text-xl">
-                <FontAwesomeIcon
-                  icon={faCircleCheck}
-                  className="text-blue-500"
-                />
+                <FontAwesomeIcon icon={faCircleCheck} className="text-blue-500" />
               </span>
               <span className="text-gray-800">
-                All you’ll have to do is open your CRM and follow up to secure
-                your new client’s business.
+                All you’ll have to do is open your CRM and follow up to secure your new client’s
+                business.
               </span>
             </li>
           </ul>

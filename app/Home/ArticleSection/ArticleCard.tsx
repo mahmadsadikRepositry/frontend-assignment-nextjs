@@ -25,8 +25,7 @@ export const ArticleCard = ({
                 alt={title}
                 fill
                 sizes="(max-width: 768px) 100vw, 480px"
-                className="object-cover"
-                style={{ boxSizing: "border-box" }}
+                className="object-cover box-border"
               />
             </div>
           )}

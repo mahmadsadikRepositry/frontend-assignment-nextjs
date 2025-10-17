@@ -52,7 +52,7 @@ export default function ResponsiveNavBar() {
                 loading="lazy"
                 decoding="async"
                 fill
-                style={{ objectFit: "contain", color: "transparent" }}
+className="object-contain text-transparent"
                 sizes="(max-width: 1024px) 267px, 293px"
                 src="/images/Answering LegalTM_Blue.png"
               />
@@ -120,7 +120,7 @@ export default function ResponsiveNavBar() {
                   width={59}
                   height={48}
                   decoding="async"
-                  style={{ color: "transparent", maxWidth: "100%", height: "auto" }}
+className="text-transparent max-w-full h-auto"
                   src="https://cdn.sanity.io/images/ypwggt2k/production/16888fc003b4cb13644da7c9332010fff571035d-59x48.svg"
                 />
               </button>

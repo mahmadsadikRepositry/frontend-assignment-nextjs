@@ -24,15 +24,13 @@ export default function ResponsiveNavBar() {
         </div>
       </a>
 
-      {/* Navbar */}
       <header
         className={clsx(
-          'fixed z-[55] transition-all duration-500 ease-in-out w-full flex flex-col gap-4 lg:gap-2 items-center px-4 py-2 lg:px-8 lg:pt-4 lg:pb-3',
-          'top-[38px] lg:top-0 h-16 lg:h-[100px]',
+          "fixed z-[55] transition-all duration-500 ease-in-out w-full flex flex-col gap-4 lg:gap-2 items-center px-4 py-2 lg:px-8 lg:pt-4 lg:pb-3",
+          "top-[38px] lg:top-0 h-20 lg:h-[120px]"
         )}
         style={{ backgroundColor: 'hsla(0, 11%, 96%, 0.85)' }}
       >
-        {/* Top support row */}
         <div className="hidden lg:flex justify-end items-center gap-8 self-stretch h-[14px] w-full max-w-[1440px] mx-auto text-[18px]">
           <a className="text-lightGrey underline" href="/help-center">
             Help Center
@@ -42,25 +40,22 @@ export default function ResponsiveNavBar() {
           </a>
         </div>
 
-        {/* Main nav row */}
-        <nav className="w-full flex flex-row justify-between items-center self-stretch h-[48px] max-w-[1440px] mx-auto">
-          {/* Logo */}
+        <nav className="w-full flex flex-row justify-between items-center self-stretch h-[70px] max-w-[1440px] mx-auto">
           <Link aria-label="Go to homepage" href="/">
-            <div className="relative w-[267px] h-[42px] lg:w-[293px] lg:h-[40px]">
+            <div className="relative w-[320px] h-[60px] lg:w-[400px] lg:h-[70px]">
               <Image
                 alt="Answering Legal Logo"
                 loading="lazy"
                 decoding="async"
                 fill
                 className="object-contain text-transparent"
-                sizes="(max-width: 1024px) 267px, 293px"
+                sizes="(max-width: 1024px) 320px, 400px"
                 src="/images/Answering LegalTM_Blue.png"
               />
               <span className="sr-only">Answering Legal Home</span>
             </div>
           </Link>
 
-          {/* Desktop nav links */}
           <div className="flex justify-center items-start gap-2 lg:gap-4 xl:gap-6 h-[30px]">
             {['Products', 'About', 'Resources'].map(label => (
               <div key={label} className="relative hidden lg:flex">
@@ -93,7 +88,6 @@ export default function ResponsiveNavBar() {
             </div>
           </div>
 
-          {/* Desktop buttons */}
           <div className="hidden lg:flex items-center gap-3">
             <button
               type="button"
@@ -116,7 +110,6 @@ export default function ResponsiveNavBar() {
             </a>
           </div>
 
-          {/* Mobile menu */}
           <Dialog.Root open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
             <Dialog.Trigger asChild>
               <button type="button" className="flex lg:hidden" aria-label="Open mobile menu">

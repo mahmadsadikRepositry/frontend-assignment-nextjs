@@ -56,36 +56,40 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Desktop Hero */}
-      <div className="hidden md:block relative w-full hero-bg flex items-center bg-cover bg-center">
-        <div className="absolute inset-0 bg-gradient-to-r from-[#23255A]/80 to-transparent" />
-        <div className="relative z-10 flex flex-col justify-center pl-40 py-12 max-w-4xl">
-          <h1 className="text-white text-5xl font-bold mb-6 leading-tight max-w-[800px]">
-            We're more than an answering service
-          </h1>
-          <p className="text-white text-xl mb-6 max-w-[600px]">
-            Answering Legal has everything you need to make sure your firm never misses another
-            opportunity.
-          </p>
-          <div className="mb-6">
-            <span className="text-white font-bold text-2xl">Excellent 4.84</span>
-            <div className="flex items-center gap-2 mt-2">
-              {[...Array(5)].map((_, i) => (
-                <FontAwesomeIcon key={i} icon={faStar} className="text-yellow-400" />
-              ))}
-            </div>
-            <span className="text-white text-base block mt-2">based on 230 reviews</span>
-          </div>
-          <a
-            className="px-4 gap-[10px] rounded-[12px] text-center flex justify-center items-center font-semibold text-[22px] overflow-hidden h-[43px] shrink-0 py-[20px] w-fit h-auto max-h-[43px] bg-blue text-white hover:bg-navyBlue"
-            href="/try-for-free"
-          >
-            See our pricing
-          </a>
-        </div>
+<div className="hidden md:block relative w-full hero-bg flex items-center bg-cover bg-center">
+  <div className="absolute inset-0 bg-gradient-to-r from-[#23255A]/80 to-transparent" />
+  <div className="relative z-10 flex flex-col justify-center pl-40 py-12 max-w-4xl">
+    <h1 className="text-white text-5xl font-bold mb-6 leading-tight max-w-[800px]">
+      We're more than an answering service
+    </h1>
+    <p className="text-white text-xl mb-6 max-w-[600px]">
+      Answering Legal has everything you need to make sure your firm never
+      misses another opportunity.
+    </p>
+    <div className="mb-6">
+      <span className="text-white font-bold text-2xl">Excellent 4.84</span>
+      <div className="flex items-center gap-2 mt-2">
+        {[...Array(5)].map((_, i) => (
+          <FontAwesomeIcon
+            key={i}
+            icon={faStar}
+            className="text-yellow-400"
+          />
+        ))}
       </div>
+      <span className="text-white text-base block mt-2">
+        based on 230 reviews
+      </span>
+    </div>
+    <a
+      className="px-4 gap-[10px] rounded-[12px] text-center flex justify-center items-center font-semibold text-[22px] overflow-hidden h-[43px] shrink-0 py-[20px] w-fit h-auto max-h-[43px] bg-blue text-white hover:bg-navyBlue"
+      href="/try-for-free"
+    >
+      See our pricing
+    </a>
+  </div>
+</div>
 
-      {/* Hero Cards */}
       <div className="md:hidden bg-white py-12 px-6">
         <div className="flex flex-col items-center gap-3 mb-8">
           <h2 className="text-navyBlue text-2xl font-semibold text-center">
@@ -113,7 +117,6 @@ export default function Hero() {
           <h2 className="text-white text-3xl font-semibold text-center">
             Here's what we can do for your law firm
           </h2>
-          {/* Stretched line */}
           <div className="w-full h-[2px] bg-[#3CCED7] max-w-[1250px] mb-4" />
         </div>
 

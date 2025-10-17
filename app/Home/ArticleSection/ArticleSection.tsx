@@ -49,30 +49,35 @@ export const ArticleSection = () => {
         </h2>
 
         <div className="relative flex items-center">
-          {/* Left Arrow */}
-          <button
-            onClick={handlePrev}
-            className="absolute left-[-40px] top-1/2 transform -translate-y-1/2 z-10"
-          >
-            <div className="w-12 h-12 flex items-center justify-center rounded-full border border-gray-300 cursor-pointer ml-2">
-              <FontAwesomeIcon icon={faChevronLeft} size="xl" className="text-navyBlue" />
-            </div>
-          </button>
+<button
+  onClick={handlePrev}
+  className="absolute left-[-40px] top-1/2 transform -translate-y-1/2 z-10"
+>
+  <div className="w-12 h-12 flex items-center justify-center rounded-full border border-gray-300 cursor-pointer ml-2">
+    <FontAwesomeIcon
+      icon={faChevronLeft}
+      size="xl"
+      className="text-navyBlue"
+    />
+  </div>
+</button>
 
-          {/* Scrollable articles */}
-          <div ref={carouselRef} className="flex overflow-hidden gap-6 scroll-smooth px-2">
-            {ArticleItems.map((item, i) => (
-              <div key={i} className="flex-shrink-0 w-[calc(33.333%-1rem)]">
-                <ArticleCard
-                  title={item.title}
-                  description={item.description}
-                  img={item.img}
-                  date={item.date}
-                  category={item.category}
-                />
-              </div>
-            ))}
-          </div>
+<div
+  ref={carouselRef}
+  className="flex overflow-hidden gap-6 scroll-smooth px-2"
+>
+  {ArticleItems.map((item, i) => (
+    <div key={i} className="flex-shrink-0 w-[calc(33.333%-1rem)]">
+      <ArticleCard
+        title={item.title}
+        description={item.description}
+        img={item.img}
+        date={item.date}
+        category={item.category}
+      />
+    </div>
+  ))}
+</div>
 
           {/* Right Arrow */}
           <button
